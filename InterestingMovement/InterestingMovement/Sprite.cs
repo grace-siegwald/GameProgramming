@@ -16,7 +16,7 @@ namespace InterestingMovement
         public float GravityAcceleration;
         public Color Color;
 
-        Game game;
+        public Game Game;
         public Texture2D Texture;
         float time;
 
@@ -29,10 +29,10 @@ namespace InterestingMovement
             Color = color;
         }
 
-        public void LoadContent(Game _game, Vector2 location, float speed, Vector2 direction)
+        public void LoadContent(Game game, Vector2 location, float speed, Vector2 direction)
         {
-            game = _game;
-            Texture = game.Content.Load<Texture2D>(TextureName);
+            Game = game;
+            Texture = Game.Content.Load<Texture2D>(TextureName);
             Location = location;
             Direction = direction;
             Speed = speed;

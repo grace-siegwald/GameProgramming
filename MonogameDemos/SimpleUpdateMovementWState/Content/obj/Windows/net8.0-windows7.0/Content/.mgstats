@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Siegwald/Documents/GitHub/GameProgramming/MonogameDemos/SimpleUpdateMovementWState/Content/pacmanSingle.png","C:/Users/Siegwald/Documents/GitHub/GameProgramming/MonogameDemos/SimpleUpdateMovementWState/Content/bin/Windows/Content/pacmanSingle.xnb","TextureProcessor","Texture2DContent",2204,11533,0.0632882
+"C:/Users/Siegwald/Documents/GitHub/GameProgramming/MonogameDemos/SimpleUpdateMovementWState/Content/SpriteFont1.spritefont","C:/Users/Siegwald/Documents/GitHub/GameProgramming/MonogameDemos/SimpleUpdateMovementWState/Content/bin/Windows/Content/SpriteFont1.xnb","FontDescriptionProcessor","SpriteFontContent",2065,21538,0.0512231

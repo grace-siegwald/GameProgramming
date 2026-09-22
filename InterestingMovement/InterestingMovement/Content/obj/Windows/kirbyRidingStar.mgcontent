@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/Siegwald/Documents/GitHub/GameProgramming/InterestingMovement/InterestingMovement/Content/kirbyRidingStar.png</SourceFile>
-  <SourceTime>2026-09-22T09:52:26.3199346-05:00</SourceTime>
+  <SourceTime>2026-09-22T10:49:55.2035157-05:00</SourceTime>
   <DestFile>C:/Users/Siegwald/Documents/GitHub/GameProgramming/InterestingMovement/InterestingMovement/Content/bin/Windows/kirbyRidingStar.xnb</DestFile>
-  <DestTime>2026-09-22T10:07:08.9485053-05:00</DestTime>
+  <DestTime>2026-09-22T11:45:33.3160475-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2019-07-19T12:50:46-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

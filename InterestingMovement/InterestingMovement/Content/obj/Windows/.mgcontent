@@ -4,10 +4,12 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/Siegwald/Documents/GitHub/GameProgramming/InterestingMovement/InterestingMovement/Content/Arial.spritefont</File>
     <File>C:/Users/Siegwald/Documents/GitHub/GameProgramming/InterestingMovement/InterestingMovement/Content/kirbyBackgroundCutout.png</File>
     <File>C:/Users/Siegwald/Documents/GitHub/GameProgramming/InterestingMovement/InterestingMovement/Content/kirbyRidingStar.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>

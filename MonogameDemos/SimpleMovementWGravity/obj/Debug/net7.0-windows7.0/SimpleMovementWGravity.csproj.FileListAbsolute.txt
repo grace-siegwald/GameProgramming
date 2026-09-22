@@ -1,0 +1,6 @@
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonogameDemos\SimpleMovementWGravity\obj\Debug\net7.0-windows7.0\mgcb.tool.restore
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonogameDemos\SimpleMovementWGravity\obj\Debug\net7.0-windows7.0\SimpleMovementWGravity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonogameDemos\SimpleMovementWGravity\obj\Debug\net7.0-windows7.0\SimpleMovementWGravity.AssemblyInfoInputs.cache
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonogameDemos\SimpleMovementWGravity\obj\Debug\net7.0-windows7.0\SimpleMovementWGravity.AssemblyInfo.cs
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonogameDemos\SimpleMovementWGravity\obj\Debug\net7.0-windows7.0\SimpleMovementWGravity.csproj.CoreCompileInputs.cache
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonogameDemos\SimpleMovementWGravity\obj\Debug\net7.0-windows7.0\SimpleMovementWGravity.sourcelink.json
