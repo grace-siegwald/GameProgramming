@@ -150,6 +150,7 @@ namespace SimpleUpdateMovementWState
                     }
                     break;
                 //Moves Pacman bassed on acceloration it's floaty or like on ice
+                //Mario skiddddd...
                 case PacManMovementState.Momentum:
                     //slowdown no keys pressed accelerate on keys
                     if (Keyboard.GetState().GetPressedKeys().Length == 0) //If there is any key press the legth of the Array of keys returned by GetPressedKeys wil be greater that 0

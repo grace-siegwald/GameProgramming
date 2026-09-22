@@ -13,11 +13,20 @@ namespace InterestingMovement
         Player Player = new Player("kirbyRidingStar", Color.White);
         SpriteFont font;
 
+        // Framerate Stuff
+        float CumulativeFrameTime;
+        int NumFrames;
+        int FramesPerSecond;
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
+            // Unlocks the framerate:
+            _graphics.SynchronizeWithVerticalRetrace = false;
+            this.IsFixedTimeStep = false;
+            
             _graphics.PreferredBackBufferHeight = 258;
             _graphics.PreferredBackBufferWidth = 260;
 

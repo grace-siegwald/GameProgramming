@@ -8,7 +8,7 @@ namespace SimpleMovementWGravity
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
-    public class Game1 : Game
+    public sealed class Game1 : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
@@ -50,8 +50,8 @@ namespace SimpleMovementWGravity
             // Middle of the screen:
             Vector2 middle = new Vector2(GraphicsDevice.Viewport.Width / 2, GraphicsDevice.Viewport.Height / 2);
             PacMan1.LoadContent(Content, GraphicsDevice, middle, 200, new Vector2(1, 0));
-            PacMan2.LoadContent(Content, GraphicsDevice, middle / 1.5f, 200, new Vector2(1, 0));
-            PacMan3.LoadContent(Content, GraphicsDevice, middle / 1.25f, 200, new Vector2(1, 0));
+            PacMan2.LoadContent(Content, GraphicsDevice, middle + new Vector2(100,-100), 200, new Vector2(1, 0));
+            PacMan3.LoadContent(Content, GraphicsDevice, middle + new Vector2(-200,100), 200, new Vector2(1, 0));
 
             font = Content.Load<SpriteFont>("Arial");
         }

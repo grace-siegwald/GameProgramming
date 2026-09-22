@@ -15,6 +15,7 @@ namespace InterestingMovement
         public Vector2 GravityDirection;
         public float GravityAcceleration;
         public Color Color;
+        public Vector2 Origin;
 
         public Game Game;
         public Texture2D Texture;
@@ -38,6 +39,8 @@ namespace InterestingMovement
             Speed = speed;
             GravityDirection = new Vector2(0, 1);
             GravityAcceleration = 1.8f;
+
+            Origin = new Vector2(Texture.Width /2, Texture.Height /2);
         }
         public void Update(GameTime gameTime)
         {
