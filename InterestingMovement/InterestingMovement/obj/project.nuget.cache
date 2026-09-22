@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "7WVvYTYw4TRt7xNiGllBR12W9pilCB0jSuy1ZiLT0uQOj1KVnoidy7Hgvf2gCDxQwDL2PorLwRwwaz8hAlOdgg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\InterestingMovement.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Siegwald\\.nuget\\packages\\monogame.content.builder.task\\3.8.5.1\\monogame.content.builder.task.3.8.5.1.nupkg.sha512",
+    "C:\\Users\\Siegwald\\.nuget\\packages\\monogame.framework.native\\3.8.5.1\\monogame.framework.native.3.8.5.1.nupkg.sha512",
+    "C:\\Users\\Siegwald\\.nuget\\packages\\monogame.runtime.windows.dx12\\3.8.5.1\\monogame.runtime.windows.dx12.3.8.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
