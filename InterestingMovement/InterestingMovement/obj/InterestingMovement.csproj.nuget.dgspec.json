@@ -1,36 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kbsie\\Documents\\GameProgramming\\InterestingMovement\\InterestingMovement\\InterestingMovement.csproj": {}
+    "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\InterestingMovement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kbsie\\Documents\\GameProgramming\\InterestingMovement\\InterestingMovement\\InterestingMovement.csproj": {
+    "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\InterestingMovement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kbsie\\Documents\\GameProgramming\\InterestingMovement\\InterestingMovement\\InterestingMovement.csproj",
+        "projectUniqueName": "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\InterestingMovement.csproj",
         "projectName": "InterestingMovement",
-        "projectPath": "C:\\Users\\kbsie\\Documents\\GameProgramming\\InterestingMovement\\InterestingMovement\\InterestingMovement.csproj",
-        "packagesPath": "C:\\Users\\kbsie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kbsie\\Documents\\GameProgramming\\InterestingMovement\\InterestingMovement\\obj\\",
+        "projectPath": "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\InterestingMovement.csproj",
+        "packagesPath": "C:\\Users\\Siegwald\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kbsie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Siegwald\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0-windows"
+          "net8.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0-windows7.0": {
-            "targetAlias": "net9.0-windows",
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows7.0",
             "projectReferences": {}
           }
         },
@@ -38,17 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
-        "net9.0-windows7.0": {
-          "targetAlias": "net9.0-windows",
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows7.0",
           "dependencies": {
             "MonoGame.Content.Builder.Task": {
               "target": "Package",
@@ -79,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.318/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.425/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

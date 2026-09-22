@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kbsie\\Documents\\GameProgramming\\MonogameDemos\\ComponentsFromLibrary\\ComponentsFromLibrary.csproj": {}
+    "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\MonogameDemos\\ComponentsFromLibrary\\ComponentsFromLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kbsie\\Documents\\GameProgramming\\MonogameDemos\\ComponentsFromLibrary\\ComponentsFromLibrary.csproj": {
+    "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\MonogameDemos\\ComponentsFromLibrary\\ComponentsFromLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kbsie\\Documents\\GameProgramming\\MonogameDemos\\ComponentsFromLibrary\\ComponentsFromLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\MonogameDemos\\ComponentsFromLibrary\\ComponentsFromLibrary.csproj",
         "projectName": "ComponentsFromLibrary",
-        "projectPath": "C:\\Users\\kbsie\\Documents\\GameProgramming\\MonogameDemos\\ComponentsFromLibrary\\ComponentsFromLibrary.csproj",
-        "packagesPath": "C:\\Users\\kbsie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kbsie\\Documents\\GameProgramming\\MonogameDemos\\ComponentsFromLibrary\\obj\\",
+        "projectPath": "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\MonogameDemos\\ComponentsFromLibrary\\ComponentsFromLibrary.csproj",
+        "packagesPath": "C:\\Users\\Siegwald\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\MonogameDemos\\ComponentsFromLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kbsie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Siegwald\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows7.0",
             "projectReferences": {
-              "C:\\Users\\kbsie\\Documents\\GameProgramming\\MonogameDemos\\MonoGameLibrary\\MonoGameLibrary.csproj": {
-                "projectPath": "C:\\Users\\kbsie\\Documents\\GameProgramming\\MonogameDemos\\MonoGameLibrary\\MonoGameLibrary.csproj"
+              "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\MonogameDemos\\MonoGameLibrary\\MonoGameLibrary.csproj": {
+                "projectPath": "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\MonogameDemos\\MonoGameLibrary\\MonoGameLibrary.csproj"
               }
             }
           }
@@ -42,27 +43,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows7.0",
-          "dependencies": {
-            "MonoGame.Content.Builder.Task": {
-              "target": "Package",
-              "version": "[3.8.4.1, )"
-            },
-            "MonoGame.Framework.WindowsDX": {
-              "target": "Package",
-              "version": "[3.8.4.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -74,32 +59,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.318/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.425/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kbsie\\Documents\\GameProgramming\\MonogameDemos\\MonoGameLibrary\\MonoGameLibrary.csproj": {
+    "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\MonogameDemos\\MonoGameLibrary\\MonoGameLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kbsie\\Documents\\GameProgramming\\MonogameDemos\\MonoGameLibrary\\MonoGameLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\MonogameDemos\\MonoGameLibrary\\MonoGameLibrary.csproj",
         "projectName": "MonoGameLibrary",
-        "projectPath": "C:\\Users\\kbsie\\Documents\\GameProgramming\\MonogameDemos\\MonoGameLibrary\\MonoGameLibrary.csproj",
-        "packagesPath": "C:\\Users\\kbsie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kbsie\\Documents\\GameProgramming\\MonogameDemos\\MonoGameLibrary\\obj\\",
+        "projectPath": "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\MonogameDemos\\MonoGameLibrary\\MonoGameLibrary.csproj",
+        "packagesPath": "C:\\Users\\Siegwald\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\MonogameDemos\\MonoGameLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kbsie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Siegwald\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -108,6 +85,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -120,27 +98,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows7.0",
-          "dependencies": {
-            "MonoGame.Content.Builder.Task": {
-              "target": "Package",
-              "version": "[3.8.4.1, )"
-            },
-            "MonoGame.Framework.WindowsDX": {
-              "target": "Package",
-              "version": "[3.8.4.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -152,15 +114,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.318/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.425/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="InterestingMovement.Sprite">
-    <Position X="4.75" Y="2.75" Width="1.5" />
+    <Position X="3.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <HashCode>AAQBAAIAAAAAAoAAACJAAAABAAAAAAAIAAIAgAgACAQ=</HashCode>
       <FileName>Sprite.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InterestingMovement.Player">
-    <Position X="4.75" Y="4.75" Width="1.5" />
+    <Position X="4.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>

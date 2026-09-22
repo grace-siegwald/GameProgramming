@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Siegwald/Documents/GitHub/GameProgramming/MonogameDemos/SimpleMovementWGravity/Content/Arial.spritefont","C:/Users/Siegwald/Documents/GitHub/GameProgramming/MonogameDemos/SimpleMovementWGravity/Content/bin/Windows/Content/Arial.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21538,0.2099949
+"C:/Users/Siegwald/Documents/GitHub/GameProgramming/MonogameDemos/SimpleMovementWGravity/Content/pacmanSingle.png","C:/Users/Siegwald/Documents/GitHub/GameProgramming/MonogameDemos/SimpleMovementWGravity/Content/bin/Windows/Content/pacmanSingle.xnb","TextureProcessor","Texture2DContent",2204,11533,0.0213642

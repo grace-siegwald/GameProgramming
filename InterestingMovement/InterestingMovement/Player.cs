@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace InterestingMovement
 {
-    public class Player : Sprite
+    public class Player
     {
 
     }
