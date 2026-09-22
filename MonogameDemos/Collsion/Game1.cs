@@ -1,0 +1,121 @@
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using MonoGameLibrary.Util;
+
+namespace Collision
+{
+    /// <summary>
+    /// This is the main type for your game.
+    /// </summary>
+    public class Game1 : Game
+    {
+        GraphicsDeviceManager graphics;
+        SpriteBatch spriteBatch;
+
+        //Sevices from MonogameLibrary.Util
+        InputHandler input;     //Input Handler
+        GameConsole console;    //Game Console for logging
+        ScoreService score;     //Score Service to keep track or game score
+
+        //Game Components
+        PacMan pac;             //Subclasses of MonogameLibrary.DrawableSprite
+        Ghost tealGhost;        //Subclasses of MonogameLibrary.DrawableSprite
+        Ghost redGhost;        //Subclasses of MonogameLibrary.DrawableSprite
+
+        public Game1()
+        {
+            graphics = new GraphicsDeviceManager(this);
+            Content.RootDirectory = "Content";
+
+            //create instance of services
+            input = new InputHandler(this);
+            console = new GameConsole(this);
+            score = new ScoreService(this);
+
+            //Add components to game
+            this.Components.Add(input);     
+            this.Components.Add(console);
+            this.Components.Add(score);
+
+            //Pacman and Ghost depend on the services to add them next
+            pac = new PacMan(this);
+            pac.ShowMarkers = true;     //show markers for collision
+            this.Components.Add(pac);
+
+            tealGhost = new Ghost(this, pac);
+            tealGhost.ShowMarkers = true;
+            this.Components.Add(tealGhost);
+
+            redGhost = new Ghost(this, pac);
+
+            redGhost.SpriteTexture = "PurpleGhost";
+            redGhost.ShowMarkers = true;
+            this.Components.Add(redGhost);
+        }
+
+        /// <summary>
+        /// Allows the game to perform any initialization it needs to before starting to run.
+        /// This is where it can query for any required services and load any non-graphic
+        /// related content.  Calling base.Initialize will enumerate through any components
+        /// and initialize them as well.
+        /// </summary>
+        protected override void Initialize()
+        {
+            
+
+            base.Initialize();
+        }
+
+        /// <summary>
+        /// LoadContent will be called once per game and is the place to load
+        /// all of your content.
+        /// </summary>
+        protected override void LoadContent()
+        {
+            // Create a new SpriteBatch, which can be used to draw textures.
+            spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            redGhost.Location = new Vector2(100, 100);
+        }
+
+        /// <summary>
+        /// UnloadContent will be called once per game and is the place to unload
+        /// game-specific content.
+        /// </summary>
+        protected override void UnloadContent()
+        {
+            
+        }
+
+        /// <summary>
+        /// Allows the game to run logic such as updating the world,
+        /// checking for collisions, gathering input, and playing audio.
+        /// </summary>
+        /// <param name="gameTime">Provides a snapshot of timing values.</param>
+        protected override void Update(GameTime gameTime)
+        {
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+                Exit();
+
+
+
+            
+
+            base.Update(gameTime);
+        }
+
+        /// <summary>
+        /// This is called when the game should draw itself.
+        /// </summary>
+        /// <param name="gameTime">Provides a snapshot of timing values.</param>
+        protected override void Draw(GameTime gameTime)
+        {
+            GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            
+
+            base.Draw(gameTime);
+        }
+    }
+}

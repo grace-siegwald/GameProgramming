@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterestingMovement", "InterestingMovement\InterestingMovement.csproj", "{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A492F48A-51E1-4F96-BFA3-5275425CB298}
+	EndGlobalSection
+EndGlobal

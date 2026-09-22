@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PacManWeaponsStrategy.Weapon">
+    <Position X="6.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAACAAAAAgAAAAAAAAAQAAAAEAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Weapon.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StrategyPacMan.weapons.foodWeapon" Collapsed="true">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAACAAAAAgAAAAAAAAAQAAAAEAAAAAAAAAACAAAA=</HashCode>
+      <FileName>weapons\foodWeapon.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PacManWeaponsStrategy.food" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAwAAAAAAAAAAAAAAAACAAAAAAAAAAAQ=</HashCode>
+      <FileName>food.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StrategyPacMan.weapons.RedWeapon" Collapsed="true">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>weapons\RedWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StrategyPacMan.weapons.NoWeapon" Collapsed="true">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>weapons\NoWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StrategyPacMan.weapons.TealWeapon" Collapsed="true">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>weapons\TealWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="StrategyPacMan.weapons.IWeapon" Collapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAACAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>weapons\IWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

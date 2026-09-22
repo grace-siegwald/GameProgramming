@@ -1,0 +1,174 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0-windows7.0": {
+      "MonoGame.Content.Builder.Task/3.8.5.1": {
+        "type": "package",
+        "build": {
+          "build/MonoGame.Content.Builder.Task.props": {},
+          "build/MonoGame.Content.Builder.Task.targets": {}
+        }
+      },
+      "MonoGame.Framework.Native/3.8.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/MonoGame.Framework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/MonoGame.Framework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MonoGame.Runtime.Windows.DX12/3.8.5.1": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/mgruntime.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/mgruntime.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MonoGame.Content.Builder.Task/3.8.5.1": {
+      "sha512": "9isFjZSi87Fy8Hv0qLeol27xUNdt3EzGYdBabR/qHVT7ujVGebWQzfgjDhJaT3M8tJEazpeA+ftYAgokmIZUbQ==",
+      "type": "package",
+      "path": "monogame.content.builder.task/3.8.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/MonoGame.Content.Builder.Task.props",
+        "build/MonoGame.Content.Builder.Task.targets",
+        "monogame.content.builder.task.3.8.5.1.nupkg.sha512",
+        "monogame.content.builder.task.nuspec"
+      ]
+    },
+    "MonoGame.Framework.Native/3.8.5.1": {
+      "sha512": "vg3F0e5BUcLYkSHEELU/yFGurSMI48ok4UDqrrStw+p4TOuNwk5ZbgojQ61/dl7mGgfcOwTfti3+m431Kz+0Ag==",
+      "type": "package",
+      "path": "monogame.framework.native/3.8.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.1/MonoGame.Framework.dll",
+        "lib/netstandard2.1/MonoGame.Framework.xml",
+        "monogame.framework.native.3.8.5.1.nupkg.sha512",
+        "monogame.framework.native.nuspec"
+      ]
+    },
+    "MonoGame.Runtime.Windows.DX12/3.8.5.1": {
+      "sha512": "3Qu0xsvWxbkUTpZzWdy0eTgw0X5UzfNwOezwU9vlEaMPDJ0jSqUMnQhqXbxPNZlIRxY2AGkeZj5UlO0bb2IkzA==",
+      "type": "package",
+      "path": "monogame.runtime.windows.dx12/3.8.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "monogame.runtime.windows.dx12.3.8.5.1.nupkg.sha512",
+        "monogame.runtime.windows.dx12.nuspec",
+        "runtimes/win-arm64/native/mgruntime.dll",
+        "runtimes/win-x64/native/mgruntime.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0-windows7.0": [
+      "MonoGame.Content.Builder.Task >= 3.8.*",
+      "MonoGame.Framework.Native >= 3.8.5.1",
+      "MonoGame.Runtime.Windows.DX12 >= 3.8.5.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\kbsie\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\kbsie\\Documents\\GameProgramming\\HelloMonoGame\\HelloMonoGame\\HelloMonoGame.csproj",
+      "projectName": "HelloMonoGame",
+      "projectPath": "C:\\Users\\kbsie\\Documents\\GameProgramming\\HelloMonoGame\\HelloMonoGame\\HelloMonoGame.csproj",
+      "packagesPath": "C:\\Users\\kbsie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kbsie\\Documents\\GameProgramming\\HelloMonoGame\\HelloMonoGame\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\kbsie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0-windows7.0": {
+        "targetAlias": "net9.0-windows",
+        "dependencies": {
+          "MonoGame.Content.Builder.Task": {
+            "target": "Package",
+            "version": "[3.8.*, )"
+          },
+          "MonoGame.Framework.Native": {
+            "target": "Package",
+            "version": "[3.8.5.1, )"
+          },
+          "MonoGame.Runtime.Windows.DX12": {
+            "target": "Package",
+            "version": "[3.8.5.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

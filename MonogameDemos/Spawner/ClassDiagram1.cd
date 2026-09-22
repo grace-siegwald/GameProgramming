@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Spawner.TimedGhostSpawner">
+    <Position X="9.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>TimedGhostSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spawner.ProximitySpawner">
+    <Position X="7" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAIAAIAAAAQAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>ProximitySpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spawner.TimedCollectionSpawner">
+    <Position X="9.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAgAAAAoAIAIAAAAGAAgAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TimedCollectionSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spawner.TimedSpawner">
+    <Position X="7" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAQAEAAEAAA=</HashCode>
+      <FileName>TimedSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spawner.Spawner">
+    <Position X="5.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAABAAAAAAAAAAAEAAEAgAABBABAAQAABAAAAAAA=</HashCode>
+      <FileName>Spawner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Spawner.ISpawner">
+    <Position X="3.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Spawner.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Spawner.ProximitySpawnerType">
+    <Position X="11.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAACAAIAA=</HashCode>
+      <FileName>ProximitySpawner.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Spawner.SpawnType">
+    <Position X="13.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAEAAAAA=</HashCode>
+      <FileName>TimedCollectionSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

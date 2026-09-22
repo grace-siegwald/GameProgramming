@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/kbsie/Documents/GameProgramming/HelloMonoGame/HelloMonoGame/Content/Font.spritefont","C:/Users/kbsie/Documents/GameProgramming/HelloMonoGame/HelloMonoGame/Content/bin/WindowsDX12/Content/Font.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21529,0.1525006
+"C:/Users/kbsie/Documents/GameProgramming/HelloMonoGame/HelloMonoGame/Content/PacmanSingle.png","C:/Users/kbsie/Documents/GameProgramming/HelloMonoGame/HelloMonoGame/Content/bin/WindowsDX12/Content/PacmanSingle.xnb","TextureProcessor","Texture2DContent",2204,11533,0.0063681
