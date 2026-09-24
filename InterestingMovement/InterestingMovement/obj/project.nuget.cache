@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "rGN+1AB0PG4=",
+  "dgSpecHash": "BNvJVPjXMxw=",
   "success": true,
   "projectFilePath": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\InterestingMovement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\grace.siegwald\\.nuget\\packages\\monogame.content.builder.task\\3.8.5.1\\monogame.content.builder.task.3.8.5.1.nupkg.sha512",
-    "C:\\Users\\grace.siegwald\\.nuget\\packages\\monogame.framework.native\\3.8.5.1\\monogame.framework.native.3.8.5.1.nupkg.sha512",
-    "C:\\Users\\grace.siegwald\\.nuget\\packages\\monogame.runtime.windows.dx12\\3.8.5.1\\monogame.runtime.windows.dx12.3.8.5.1.nupkg.sha512"
+    "C:\\Users\\grace.siegwald\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.5.1\\monogame.framework.desktopgl.3.8.5.1.nupkg.sha512",
+    "C:\\Users\\grace.siegwald\\.nuget\\packages\\monogame.library.openal\\1.24.3.4\\monogame.library.openal.1.24.3.4.nupkg.sha512",
+    "C:\\Users\\grace.siegwald\\.nuget\\packages\\monogame.library.sdl\\2.32.10.2\\monogame.library.sdl.2.32.10.2.nupkg.sha512",
+    "C:\\Users\\grace.siegwald\\.nuget\\packages\\nvorbis\\0.10.4\\nvorbis.0.10.4.nupkg.sha512",
+    "C:\\Users\\grace.siegwald\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\grace.siegwald\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

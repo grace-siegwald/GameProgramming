@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InterestingMovement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0adae88383bd775245777f01866dcc3c4eab704b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b774d1871507661563dfe9c4de89f3851816029")]
 [assembly: System.Reflection.AssemblyProductAttribute("InterestingMovement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InterestingMovement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
