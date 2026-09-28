@@ -30,7 +30,7 @@ namespace InterestingMovement
             Color = color;
         }
 
-        public void LoadContent(Game game, Vector2 location, float speed, Vector2 direction)
+        public virtual void LoadContent(Game game, Vector2 location, float speed, Vector2 direction)
         {
             Game = game;
             Texture = Game.Content.Load<Texture2D>(TextureName);
@@ -42,7 +42,7 @@ namespace InterestingMovement
 
             Origin = new Vector2(Texture.Width /2, Texture.Height /2);
         }
-        public void Update(GameTime gameTime)
+        public virtual void Update(GameTime gameTime)
         {
             // apply gravity before move
             time = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
@@ -59,7 +59,7 @@ namespace InterestingMovement
             time = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             Location += Direction * Speed * (time / 1000);
         }
-        public void Draw(SpriteBatch spriteBatch)
+        public virtual void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(Texture, Location, Color);
         }
