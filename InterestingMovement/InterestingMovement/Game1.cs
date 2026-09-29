@@ -10,7 +10,8 @@ namespace InterestingMovement
         private SpriteBatch _spriteBatch;
 
         Texture2D Background;
-        Player Player = new Player("kirbyRidingStar", Color.White);
+        string playerTexture = "kirbyRidingStar";
+        Player Player;
         SpriteFont font;
 
         // Framerate Stuff
@@ -26,7 +27,8 @@ namespace InterestingMovement
             // Unlocks the framerate:
             _graphics.SynchronizeWithVerticalRetrace = false;
             this.IsFixedTimeStep = false;
-            
+
+            // Sets the window size to 260x258 pixels:
             _graphics.PreferredBackBufferHeight = 258;
             _graphics.PreferredBackBufferWidth = 260;
 
@@ -48,7 +50,8 @@ namespace InterestingMovement
 
             Background = Content.Load<Texture2D>("kirbyBackgroundCutout");
             
-            Player.LoadContent(this, middle, 200, new Vector2(1, 0));
+            Player = new Player(this, playerTexture);
+            Player.LoadContent();
 
             font = Content.Load<SpriteFont>("Arial");
         }

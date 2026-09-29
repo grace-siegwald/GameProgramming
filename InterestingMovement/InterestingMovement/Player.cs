@@ -11,7 +11,7 @@ namespace InterestingMovement
 {
     public class Player : Sprite
     {
-        public Player(string textureName, Color color) : base(textureName, color) // Pass the required textureName to the base Sprite constructor
+        public Player(Game game, string textureName) : base(game, textureName) // Pass the required textureName to the base Sprite constructor
         {
 
         }

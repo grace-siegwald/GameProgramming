@@ -8,55 +8,47 @@ namespace InterestingMovement
 {
     public class Sprite
     {
-        public Vector2 Direction;
+        // Set to defult values, can be changed on initialization
         public Vector2 Location;
-        public Vector2 SpawnLocation;
-        public float Speed;
-        public Vector2 GravityDirection;
-        public float GravityAcceleration;
-        public Color Color;
+        public Vector2 Direction = new Vector2(1, 0);
+        public Vector2 SpawnLocation = new Vector2(0, 0);
+        public float Speed = 200f;
+        public Vector2 GravityDirection = new Vector2(0, 1);
+        public float GravityAcceleration = 1.8f;
+        public Color Color = Color.White;
         public Vector2 Origin;
 
-        public Game Game;
+        // This stuff gets set once methinks
+        public Game Game ;
         public Texture2D Texture;
-        float time;
-
-
         public string TextureName;
 
-        public Sprite(string textureName, Color color)
+        public Sprite(Game game, string textureName)
         {
+            this.Game = game;
             TextureName = textureName;
-            Color = color;
         }
 
-        public virtual void LoadContent(Game game, Vector2 location, float speed, Vector2 direction)
+        public virtual void LoadContent()
         {
-            Game = game;
             Texture = Game.Content.Load<Texture2D>(TextureName);
-            Location = location;
-            Direction = direction;
-            Speed = speed;
-            GravityDirection = new Vector2(0, 1);
-            GravityAcceleration = 1.8f;
 
             Origin = new Vector2(Texture.Width /2, Texture.Height /2);
         }
         public virtual void Update(GameTime gameTime)
         {
             // apply gravity before move
-            time = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
-            UpdateGravity(gameTime);
-            UpdateMove(gameTime);
+            float time = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+            // passing in the "local" time to the other update methods:
+            UpdateGravity(time);
+            UpdateMove(time);
         }
-        private void UpdateGravity(GameTime gameTime)
+        private void UpdateGravity(float time)
         {
-            time = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             Direction += GravityDirection * GravityAcceleration * (time / 1000);
         }
-        private void UpdateMove(GameTime gameTime)
+        private void UpdateMove(float time)
         {
-            time = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             Location += Direction * Speed * (time / 1000);
         }
         public virtual void Draw(SpriteBatch spriteBatch)
