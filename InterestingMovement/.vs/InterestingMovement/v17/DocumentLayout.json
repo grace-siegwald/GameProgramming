@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\interestingmovement\\interestingmovement\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|solutionrelative:interestingmovement\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\interestingmovement\\interestingmovement\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|solutionrelative:interestingmovement\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\interestingmovement\\interestingmovement\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|solutionrelative:interestingmovement\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\interestingmovement\\interestingmovement\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sprite.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\Sprite.cs",
+              "RelativeDocumentMoniker": "InterestingMovement\\Sprite.cs",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\Sprite.cs",
+              "RelativeToolTip": "InterestingMovement\\Sprite.cs",
+              "ViewState": "AgIAAAEAAAAwm5mZmRkWwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T19:29:35.92Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -36,7 +49,7 @@
               "RelativeDocumentMoniker": "InterestingMovement\\Player.cs",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\Player.cs",
               "RelativeToolTip": "InterestingMovement\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAACRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T19:34:34.319Z",
               "EditorCaption": ""
@@ -44,25 +57,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Sprite.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\Sprite.cs",
-              "RelativeDocumentMoniker": "InterestingMovement\\Sprite.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\Sprite.cs",
-              "RelativeToolTip": "InterestingMovement\\Sprite.cs",
-              "ViewState": "AgIAAAAAAADAMzMzM7MiwA4AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T19:29:35.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\Game1.cs",
               "RelativeDocumentMoniker": "InterestingMovement\\Game1.cs",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\Game1.cs",
               "RelativeToolTip": "InterestingMovement\\Game1.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwBwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAADAmpmZmdkpwDQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T19:19:32.489Z",
               "EditorCaption": ""
