@@ -91,13 +91,13 @@ namespace MonoGameLibrary.Sprite
            this.SpriteMarkersTexture = this.Game.Content.Load<Texture2D>("SpriteMarker");
             
             //top left orgin
-            this.Origin = Vector2.Zero;
+            //this.Origin = Vector2.Zero;
 
             //set default color to white
             this.DrawColor = Color.White;
             
             //center orgin
-            //this.Origin = new Vector2(this.spriteTexture.Width / 2, this.spriteTexture.Height / 2);
+            this.Origin = new Vector2(this.spriteTexture.Width / 2, this.spriteTexture.Height / 2);
             base.LoadContent();
         }
 
@@ -208,7 +208,7 @@ namespace MonoGameLibrary.Sprite
         /// <param name="vector">an input vector</param>
         /// <returns>the input vector, clamped between the minimum and maximum of the
         /// viewport.</returns>
-        protected Vector2 clampToViewport(Vector2 vector)
+        protected Vector2 clampToViewport(Vector2 vector) // utility method
         {
             vp = this.Game.GraphicsDevice.Viewport;
             vector.X = MathHelper.Clamp(vector.X, vp.X, vp.X + vp.Width);

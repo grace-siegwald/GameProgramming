@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/Siegwald/Documents/GitHub/GameProgramming/Week4Library/Content/Arial.spritefont</SourceFile>
+  <SourceTime>2026-09-22T15:10:51.4380541-05:00</SourceTime>
+  <DestFile>C:/Users/Siegwald/Documents/GitHub/GameProgramming/Week4Library/Content/bin/DesktopGL/Arial.xnb</DestFile>
+  <DestTime>2026-09-29T17:54:36.1334338-05:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2019-07-19T12:50:46-05:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2019-07-19T12:50:46-05:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

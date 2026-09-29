@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameWeek4", "MonoGameWeek4.csproj", "{0831EAED-4A9E-4391-8724-442FCEB1BF98}"
+	ProjectSection(ProjectDependencies) = postProject
+		{753C7F05-B307-4BE1-82BF-9D50BC7430FD} = {753C7F05-B307-4BE1-82BF-9D50BC7430FD}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week4Library", "..\Week4Library\Week4Library.csproj", "{753C7F05-B307-4BE1-82BF-9D50BC7430FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0831EAED-4A9E-4391-8724-442FCEB1BF98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0831EAED-4A9E-4391-8724-442FCEB1BF98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0831EAED-4A9E-4391-8724-442FCEB1BF98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0831EAED-4A9E-4391-8724-442FCEB1BF98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{753C7F05-B307-4BE1-82BF-9D50BC7430FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753C7F05-B307-4BE1-82BF-9D50BC7430FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753C7F05-B307-4BE1-82BF-9D50BC7430FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753C7F05-B307-4BE1-82BF-9D50BC7430FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8EF7EEA-C9D5-4B62-AC3D-57CF1D593116}
+	EndGlobalSection
+EndGlobal

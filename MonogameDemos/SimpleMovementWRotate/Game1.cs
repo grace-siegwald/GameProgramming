@@ -22,6 +22,8 @@ namespace SimpleMovementWRotate
 
         SpriteFont font;
 
+        SpriteComponent counter;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -40,6 +42,10 @@ namespace SimpleMovementWRotate
             //Change the framerate of the game to 30 frames per second
             //This is used to show how time changes animation speed or better yet that is shouldn't
             //TargetElapsedTime = TimeSpan.FromTicks(333333);
+
+            counter = new SpriteComponent(this);
+            
+            this.Components.Add(counter);
         }
 
         /// <summary>
@@ -51,7 +57,7 @@ namespace SimpleMovementWRotate
         protected override void Initialize()
         {
             
-
+            // add break point here
             base.Initialize();
         }
 
