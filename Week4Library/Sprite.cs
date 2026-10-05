@@ -21,7 +21,7 @@ namespace Week4Library.Sprite
         public Color DrawColor;
         public Rectangle LocationRect { get { return locationRect; } set { locationRect = value; } }    //current location used for collision
                                                                              
-        public Color[] SpriteTextureData;   //Arrat for Color Data used for collision
+        public Color[] SpriteTextureData;   //Array for Color Data used for collision
         public Texture2D spriteTexture;  //current Texture
         public Texture2D SpriteTexture
         {

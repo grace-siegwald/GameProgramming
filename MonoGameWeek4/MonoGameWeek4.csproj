@@ -1,19 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows7.0</TargetFramework>
-    <RollForward>Major</RollForward>
-    <PublishReadyToRun>false</PublishReadyToRun>
-    <TieredCompilation>false</TieredCompilation>
-    <MonoGamePlatform>WindowsDX12</MonoGamePlatform>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
-    <ApplicationIcon>Icon.ico</ApplicationIcon>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="MonoGame.Framework.Native" Version="3.8.5.1" />
-    <PackageReference Include="MonoGame.Runtime.Windows.DX12" Version="3.8.5.1" />
-    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.*" />
-  </ItemGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<RollForward>Major</RollForward>
+		<PublishReadyToRun>false</PublishReadyToRun>
+		<TieredCompilation>false</TieredCompilation>
+		<MonoGamePlatform>DesktopGL</MonoGamePlatform>
+	</PropertyGroup>
+	<PropertyGroup>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<ApplicationIcon>Icon.ico</ApplicationIcon>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.*" />
+		<PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.*" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Week4Library\Week4Library.csproj" />
+	</ItemGroup>
 </Project>
