@@ -15,7 +15,7 @@ namespace InterestingMovement
         
         // For spawning lots of player objects
         List<Player> players = new List<Player>(); // empty list of players
-        int numPlayers = 1000;
+        int numPlayers = 1;
 
 
         // Framerate Stuff
@@ -60,7 +60,7 @@ namespace InterestingMovement
                 Player player = new Player(this, playerTexture);
                 {
                     player.Location = middle + new Vector2(i * 20 + 10, i * 10 + 20);
-                    player.Speed = i + 10f;
+                    player.Speed = 150;
                 }
                 player.LoadContent();
                 players.Add(player);

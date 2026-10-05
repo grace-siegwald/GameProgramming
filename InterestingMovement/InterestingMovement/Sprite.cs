@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace InterestingMovement
 {
-    public class Sprite
+    public class Sprite 
     {
         // Set to defult values, can be changed on initialization
         public Vector2 Location;
