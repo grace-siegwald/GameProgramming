@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace Week4Library.Sprite
+namespace MonoGameLibrary.Sprite
 {
     /// <summary>
     /// This is a game component that implements DrawableGameComponent.

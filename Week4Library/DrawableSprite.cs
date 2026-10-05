@@ -16,8 +16,7 @@ namespace MonoGameLibrary.Sprite
     {
         protected SpriteBatch spriteBatch;
         
-        public DrawableSprite(Game game)
-            : base(game)
+        public DrawableSprite(Game game) : base(game)
         {
             
         }
@@ -46,6 +45,7 @@ namespace MonoGameLibrary.Sprite
             base.Update(gameTime);
         }       
 
+        // This draw method is called by the Game class Draw method. It means that each "object" is in its own sprite batch. Technically not the most efficient but works here.
         public override void Draw(GameTime gameTime)
         {
             spriteBatch.Begin();
