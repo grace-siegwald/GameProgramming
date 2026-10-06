@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "j/3MiAkMrnw=",
+  "dgSpecHash": "Ezl4w54vuHjwVhhVHSTy7QxGfMNtRjNgeI//bgw9gUa36ON9xE8Q9Pg22RLtGvg5EoQPO9kmOrZr619cDQ8GWg==",
   "success": true,
-  "projectFilePath": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\MonoGameWeek4\\MonoGameWeek4.csproj",
+  "projectFilePath": "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\MonoGameWeek4\\MonoGameWeek4.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\grace.siegwald\\.nuget\\packages\\monogame.content.builder.task\\3.8.5.1\\monogame.content.builder.task.3.8.5.1.nupkg.sha512",
-    "C:\\Users\\grace.siegwald\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.5.1\\monogame.framework.desktopgl.3.8.5.1.nupkg.sha512",
-    "C:\\Users\\grace.siegwald\\.nuget\\packages\\monogame.library.openal\\1.24.3.4\\monogame.library.openal.1.24.3.4.nupkg.sha512",
-    "C:\\Users\\grace.siegwald\\.nuget\\packages\\monogame.library.sdl\\2.32.10.2\\monogame.library.sdl.2.32.10.2.nupkg.sha512",
-    "C:\\Users\\grace.siegwald\\.nuget\\packages\\nvorbis\\0.10.4\\nvorbis.0.10.4.nupkg.sha512",
-    "C:\\Users\\grace.siegwald\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\grace.siegwald\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+    "C:\\Users\\Siegwald\\.nuget\\packages\\monogame.content.builder.task\\3.8.5.1\\monogame.content.builder.task.3.8.5.1.nupkg.sha512",
+    "C:\\Users\\Siegwald\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.5.1\\monogame.framework.desktopgl.3.8.5.1.nupkg.sha512",
+    "C:\\Users\\Siegwald\\.nuget\\packages\\monogame.library.openal\\1.24.3.4\\monogame.library.openal.1.24.3.4.nupkg.sha512",
+    "C:\\Users\\Siegwald\\.nuget\\packages\\monogame.library.sdl\\2.32.10.2\\monogame.library.sdl.2.32.10.2.nupkg.sha512",
+    "C:\\Users\\Siegwald\\.nuget\\packages\\nvorbis\\0.10.4\\nvorbis.0.10.4.nupkg.sha512",
+    "C:\\Users\\Siegwald\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Siegwald\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

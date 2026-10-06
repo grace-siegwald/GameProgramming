@@ -20,6 +20,7 @@ namespace MonoGameWeek4
 
         InputHandler input;
         WaterFloor water;
+        Wave wave;
         Kirby kirby;
 
         public Game1()
@@ -38,6 +39,9 @@ namespace MonoGameWeek4
 
             kirby = new Kirby(this, water);
             Components.Add(kirby);
+
+            wave = new Wave(this);
+            Components.Add(wave);
         }
 
         protected override void Initialize()

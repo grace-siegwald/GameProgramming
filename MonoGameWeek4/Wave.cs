@@ -15,6 +15,15 @@ namespace MonoGameWeek4
         // TODO: add a wave sprite that moves across the water floor and interacts with Kirby when it collides with him
         public Wave(Game game) : base(game)
         {
+            Scale = 2f;
+            ShowMarkers = true;
+        }
+        protected override void LoadContent()
+        {
+            SpriteTexture = Game.Content.Load<Texture2D>("wave");
+            base.LoadContent();
+
+            Location = new Vector2(Game.GraphicsDevice.Viewport.Width + SpriteTexture.Width, Game.GraphicsDevice.Viewport.Height - SpriteTexture.Height * Scale / 2);
         }
     }
 }
