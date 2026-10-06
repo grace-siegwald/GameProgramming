@@ -22,6 +22,7 @@ namespace MonoGameWeek4
 
         public Kirby(Game game, WaterFloor water) : base(game)
         {
+            ShowMarkers = true;
             this.water = water; // grabbing reference to water floor because we neeeeeeed it!
             Scale = 2f; // scale to match the widow size
         }
@@ -67,9 +68,9 @@ namespace MonoGameWeek4
             {
                 Rectangle overlap = Intersection(LocationRect, water.LocationRect);
 
-                if (overlap.Height > water.Surface)
+                if (overlap.Height > water.SinkDepth)
                 {
-                    Location.Y -= overlap.Height - water.Surface;
+                    Location.Y -= overlap.Height - water.SinkDepth;
                 }
 
                 Direction.Y = 0;

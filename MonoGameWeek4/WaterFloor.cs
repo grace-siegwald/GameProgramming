@@ -12,15 +12,11 @@ namespace MonoGameWeek4
 {
     public class WaterFloor : DrawableSprite
     {
+        public int SinkDepth;
         public WaterFloor(Game game) : base(game)
         {
             Scale = 2f; // scale to match the window size
-        }
-
-        // I'm not sure why I couldn't just set this value in load content, but I couldn't get it to work that way. This way, every time the surface is called, it will calculate the value based on the current location and scale.
-        public int Surface
-        {
-            get { return (int)(6 * Scale); }
+            ShowMarkers = true;
         }
 
         protected override void LoadContent()
@@ -28,8 +24,8 @@ namespace MonoGameWeek4
             SpriteTexture = Game.Content.Load<Texture2D>("water");
             base.LoadContent();
 
-            Location = new Vector2(Game.GraphicsDevice.Viewport.Width / 2,
-                Game.GraphicsDevice.Viewport.Height - SpriteTexture.Height * Scale / 2);
+            Location = new Vector2(Game.GraphicsDevice.Viewport.Width / 2, Game.GraphicsDevice.Viewport.Height - SpriteTexture.Height * Scale / 2);
+            SinkDepth = (int)(6 * Scale);
         }
     }
 }
