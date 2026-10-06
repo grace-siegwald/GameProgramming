@@ -12,18 +12,24 @@ namespace MonoGameWeek4
 {
     public class WaterFloor : DrawableSprite
     {
-        public float Surface;
         public WaterFloor(Game game) : base(game)
         {
-            Surface = Location.Y - 100; // Just sets the surface level, we use this in the Kirby class to check is he's on the "floor" or not
-            Scale = 2f; // scale to match the widow size
+            Scale = 2f; // scale to match the window size
         }
+
+        // I'm not sure why I couldn't just set this value in load content, but I couldn't get it to work that way. This way, every time the surface is called, it will calculate the value based on the current location and scale.
+        public float Surface
+        {
+            get { return Location.Y - Origin.Y * Scale + (6 * Scale); }
+        }
+
         protected override void LoadContent()
         {
             SpriteTexture = Game.Content.Load<Texture2D>("water");
             base.LoadContent();
 
-            Location = new Vector2(Game.GraphicsDevice.Viewport.Width / 2, Game.GraphicsDevice.Viewport.Height - SpriteTexture.Height / 2);
+            Location = new Vector2(Game.GraphicsDevice.Viewport.Width / 2,
+                Game.GraphicsDevice.Viewport.Height - SpriteTexture.Height * Scale / 2);
         }
     }
 }

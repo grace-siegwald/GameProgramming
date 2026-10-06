@@ -17,7 +17,7 @@ namespace MonoGameWeek4
         WaterFloor water;
 
         public float Gravity = 6f;
-        public float JumpStrength = 3.6f;
+        public float JumpStrength = 5f;
         public bool OnFloor;
 
         public Kirby(Game game, WaterFloor water) : base(game)
@@ -31,7 +31,9 @@ namespace MonoGameWeek4
             input = Game.Services.GetService<IInputHandler>();
             SpriteTexture = Game.Content.Load<Texture2D>("kirbyPink");
             base.LoadContent();
-            Location = new Vector2(GraphicsDevice.Viewport.Width / 2, GraphicsDevice.Viewport.Height / 2);
+            Speed = 100;
+            Direction = Vector2.Zero;
+            Location = new Vector2(GraphicsDevice.Viewport.Width / 4, GraphicsDevice.Viewport.Height / 2);
         }
 
         public override void Update(GameTime gameTime)
@@ -58,10 +60,9 @@ namespace MonoGameWeek4
 
         private void UpdateFloorCollision()
         {
-            // Only land while falling (not on the way up) and when touching the water
-            if (Direction.Y >= 0 && Intersects(water))
+            if (Location.Y + Origin.Y * Scale > water.Surface)
             {
-                Location.Y = water.Surface - Origin.Y;   // put Kirby's bottom on the surface
+                Location = new Vector2(Location.X, water.Surface - Origin.Y * Scale);
                 Direction.Y = 0;
                 OnFloor = true;
             }
