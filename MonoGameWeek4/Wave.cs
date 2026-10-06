@@ -12,6 +12,7 @@ namespace MonoGameWeek4
 {
     public class Wave : DrawableSprite
     {
+        // TODO: add a wave sprite that moves across the water floor and interacts with Kirby when it collides with him
         public Wave(Game game) : base(game)
         {
         }

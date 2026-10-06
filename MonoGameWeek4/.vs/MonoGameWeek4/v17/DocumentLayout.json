@@ -11,15 +11,15 @@
       "RelativeMoniker": "D:0:0:{0831EAED-4A9E-4391-8724-442FCEB1BF98}|MonoGameWeek4.csproj|solutionrelative:waterfloor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0831EAED-4A9E-4391-8724-442FCEB1BF98}|MonoGameWeek4.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\monogameweek4\\wave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0831EAED-4A9E-4391-8724-442FCEB1BF98}|MonoGameWeek4.csproj|solutionrelative:wave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0831EAED-4A9E-4391-8724-442FCEB1BF98}|MonoGameWeek4.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\monogameweek4\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0831EAED-4A9E-4391-8724-442FCEB1BF98}|MonoGameWeek4.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{753C7F05-B307-4BE1-82BF-9D50BC7430FD}|..\\Week4Library\\Week4Library.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\week4library\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0831EAED-4A9E-4391-8724-442FCEB1BF98}|MonoGameWeek4.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\monogameweek4\\wave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0831EAED-4A9E-4391-8724-442FCEB1BF98}|MonoGameWeek4.csproj|solutionrelative:wave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{753C7F05-B307-4BE1-82BF-9D50BC7430FD}|..\\Week4Library\\Week4Library.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\week4library\\inputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -39,7 +39,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Sprite.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\Week4Library\\Sprite.cs",
               "RelativeDocumentMoniker": "..\\Week4Library\\Sprite.cs",
@@ -48,8 +48,7 @@
               "ViewState": "AgIAAHcAAAAAAAAAAAAUwIEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-05T17:44:57.287Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -78,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\MonoGameWeek4\\Game1.cs",
               "RelativeDocumentMoniker": "Game1.cs",
@@ -86,8 +85,7 @@
               "RelativeToolTip": "Game1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T17:44:57.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-05T17:44:57.429Z"
             },
             {
               "$type": "Document",
@@ -97,7 +95,7 @@
               "RelativeDocumentMoniker": "WaterFloor.cs",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\MonoGameWeek4\\WaterFloor.cs",
               "RelativeToolTip": "WaterFloor.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-05T22:50:06.529Z",
               "EditorCaption": ""
@@ -110,20 +108,20 @@
               "RelativeDocumentMoniker": "Kirby.cs",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\MonoGameWeek4\\Kirby.cs",
               "RelativeToolTip": "Kirby.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwEMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-05T22:51:31.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Wave.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\MonoGameWeek4\\Wave.cs",
               "RelativeDocumentMoniker": "Wave.cs",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\MonoGameWeek4\\Wave.cs",
               "RelativeToolTip": "Wave.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-05T22:52:34.666Z",
               "EditorCaption": ""

@@ -25,7 +25,7 @@ namespace MonoGameWeek4
             base.LoadContent();
 
             Location = new Vector2(Game.GraphicsDevice.Viewport.Width / 2, Game.GraphicsDevice.Viewport.Height - SpriteTexture.Height * Scale / 2);
-            SinkDepth = (int)(6 * Scale);
+            SinkDepth = (int)(10 * Scale);
         }
     }
 }
