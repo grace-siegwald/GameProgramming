@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGameLibrary.Sprite;
+using MonoGameLibrary.Util;
 
 namespace MonoGameWeek4
 {
@@ -14,15 +15,29 @@ namespace MonoGameWeek4
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-
+        public float WindowScaler = 2.0f;
         public Texture2D Background;
+
+        InputHandler input;
+        WaterFloor water;
+        Kirby kirby;
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+            _graphics.PreferredBackBufferWidth = (int)(256 * WindowScaler);   // same size as the background sprite
+            _graphics.PreferredBackBufferHeight = (int)(258 * WindowScaler);
 
-            this.Components.Add(new WaterFloor(this));
+            input = new InputHandler(this);
+            Components.Add(input);
+
+            water = new WaterFloor(this);
+            Components.Add(water);
+
+            kirby = new Kirby(this, water);
+            Components.Add(kirby);
         }
 
         protected override void Initialize()
@@ -36,17 +51,13 @@ namespace MonoGameWeek4
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             
-            Background = Content.Load<Texture2D>("Background");
-
-            // TODO: use this.Content to load your game content here
+            Background = Content.Load<Texture2D>("background");
         }
 
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-
-            // TODO: Add your update logic here
 
             base.Update(gameTime);
         }
@@ -56,10 +67,8 @@ namespace MonoGameWeek4
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             _spriteBatch.Begin();
-            _spriteBatch.Draw(Background, new Rectangle(0, 0, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height), Color.White);
+            _spriteBatch.Draw(Background, Vector2.Zero, null, Color.White, 0f, Vector2.Zero, WindowScaler, SpriteEffects.None, 0f); // using one of the many draw overloads to scale the background to fit the window
             _spriteBatch.End();
-
-            // TODO: Add your drawing code here
 
             base.Draw(gameTime);
         }

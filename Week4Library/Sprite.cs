@@ -14,7 +14,7 @@ namespace MonoGameLibrary.Sprite
     public class Sprite : Microsoft.Xna.Framework.DrawableGameComponent
     {
         //Vectors for Location Direction and Orgin
-        public Vector2 Location, Direction, Origin;  //Origin starts at top left can be moved to center by uncommenting code in LoadContent
+        public Vector2 Location, Direction, Origin;  //Origin starts at middle can be moved to top left by uncommenting code in LoadContent
         public float Speed; 
         public float Rotate;    //Rotation in degrees
         public SpriteEffects SpriteEffects;

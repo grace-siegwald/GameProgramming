@@ -43,3 +43,4 @@ C:\Mac\Home\Documents\GitHub\GameProgramming\MonoGameWeek4\bin\Debug\net8.0\Cont
 C:\Mac\Home\Documents\GitHub\GameProgramming\MonoGameWeek4\bin\Debug\net8.0\Content\water.xnb
 C:\Mac\Home\Documents\GitHub\GameProgramming\MonoGameWeek4\bin\Debug\net8.0\Content\wave.xnb
 C:\Mac\Home\Documents\GitHub\GameProgramming\MonoGameWeek4\bin\Debug\net8.0\Content\SpriteMarker.xnb
+C:\Mac\Home\Documents\GitHub\GameProgramming\MonoGameWeek4\bin\Debug\net8.0\Content\background.xnb

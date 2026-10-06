@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "cGCzPTEX9G+VR2KAODarTiwzQu+JCHzJpDOJOzKHkIR423hSenAG8w1EUT3jfm3658C8WxleaYlToTfV3byysQ==",
+  "dgSpecHash": "bChtf58H9f0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Siegwald\\Documents\\GitHub\\GameProgramming\\MonogameDemos\\ConsolePacState\\ConsolePacState.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\MonogameDemos\\ConsolePacState\\ConsolePacState.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\grace.siegwald\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\grace.siegwald\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimpleMovementWGravity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc94509f1c70ddbd3effd70030b4fe1c4b8da993")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92d05095fde0f2f85c0df6689e08914ce701ca40")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimpleMovementWGravity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimpleMovementWGravity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

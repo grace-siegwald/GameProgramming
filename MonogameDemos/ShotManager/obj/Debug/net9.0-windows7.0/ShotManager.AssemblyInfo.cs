@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShotManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92d05095fde0f2f85c0df6689e08914ce701ca40")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShotManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShotManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

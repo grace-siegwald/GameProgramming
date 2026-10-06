@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimpleMovementWRotate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32f637bf19c7880c9b20d7cdbd328842a11ec4f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92d05095fde0f2f85c0df6689e08914ce701ca40")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimpleMovementWRotate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimpleMovementWRotate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/background.png","C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/bin/DesktopGL/Content/background.xnb","TextureProcessor","Texture2DContent",10116,268405,0.0866507
 "C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/great.png","C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/bin/DesktopGL/Content/great.xnb","TextureProcessor","Texture2DContent",253,2533,0.103824
 "C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/kirbyPink.png","C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/bin/DesktopGL/Content/kirbyPink.xnb","TextureProcessor","Texture2DContent",750,3681,0.0032564
 "C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/kirbyRed.png","C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/bin/DesktopGL/Content/kirbyRed.xnb","TextureProcessor","Texture2DContent",692,3681,0.0033033

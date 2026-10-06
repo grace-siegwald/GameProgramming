@@ -4,6 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/background.png</File>
     <File>C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/great.png</File>
     <File>C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/kirbyPink.png</File>
     <File>C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/kirbyRed.png</File>
@@ -12,6 +13,7 @@
     <File>C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/wave.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
