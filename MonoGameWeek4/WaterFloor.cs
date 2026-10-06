@@ -18,9 +18,9 @@ namespace MonoGameWeek4
         }
 
         // I'm not sure why I couldn't just set this value in load content, but I couldn't get it to work that way. This way, every time the surface is called, it will calculate the value based on the current location and scale.
-        public float Surface
+        public int Surface
         {
-            get { return Location.Y - Origin.Y * Scale + (6 * Scale); }
+            get { return (int)(6 * Scale); }
         }
 
         protected override void LoadContent()

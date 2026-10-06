@@ -240,11 +240,6 @@ namespace MonoGameLibrary.Sprite
         {
             return Sprite.Intersects(this.locationRect, OtherSprite.locationRect);
         }
-        public bool Intersects(Sprite OtherSprite, float offset)
-        {
-            OtherSprite.locationRect.Inflate(offset, 0);
-            return Sprite.Intersects(this.locationRect, OtherSprite.locationRect);
-        }
 
         /// <summary>
         /// Checks if this sprites pixels intersect with another sprite

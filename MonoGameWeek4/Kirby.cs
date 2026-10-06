@@ -41,7 +41,10 @@ namespace MonoGameWeek4
             float time = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
             UpdateJumpInput();
-            Direction.Y += Gravity * (time / 1000); // Gravity Logic
+            if (!OnFloor)
+            {
+                Direction.Y += Gravity * (time / 1000); // Gravity Logic
+            }
             Location += Direction * Speed * (time / 1000); // Movement Logic
 
             base.Update(gameTime); // must call the base update HERE to make sure it's drawn in right place
@@ -60,9 +63,15 @@ namespace MonoGameWeek4
 
         private void UpdateFloorCollision()
         {
-            if (Direction.Y >= 0 && Intersects(water, water.Surface))
+            if (Direction.Y >= 0 && Intersects(water))
             {
-                Location.Y = water.Surface - Origin.Y;   // put Kirby's bottom on the surface
+                Rectangle overlap = Intersection(LocationRect, water.LocationRect);
+
+                if (overlap.Height > water.Surface)
+                {
+                    Location.Y -= overlap.Height - water.Surface;
+                }
+
                 Direction.Y = 0;
                 OnFloor = true;
             }
