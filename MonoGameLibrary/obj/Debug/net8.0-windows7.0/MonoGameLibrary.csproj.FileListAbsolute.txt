@@ -1,0 +1,16 @@
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\bin\Debug\net8.0-windows7.0\Content\Arial.xnb
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\bin\Debug\net8.0-windows7.0\Content\SpriteMarker.xnb
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\bin\Debug\net8.0-windows7.0\MonoGameLibrary.deps.json
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\bin\Debug\net8.0-windows7.0\MonoGameLibrary.dll
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\bin\Debug\net8.0-windows7.0\MonoGameLibrary.pdb
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\obj\Debug\net8.0-windows7.0\mgcb.tool.restore
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\obj\Debug\net8.0-windows7.0\MonoGameLibrary.csproj.AssemblyReference.cache
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\obj\Debug\net8.0-windows7.0\MonoGameLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\obj\Debug\net8.0-windows7.0\MonoGameLibrary.AssemblyInfoInputs.cache
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\obj\Debug\net8.0-windows7.0\MonoGameLibrary.AssemblyInfo.cs
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\obj\Debug\net8.0-windows7.0\MonoGameLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\obj\Debug\net8.0-windows7.0\MonoGameLibrary.sourcelink.json
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\obj\Debug\net8.0-windows7.0\MonoGameLibrary.dll
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\obj\Debug\net8.0-windows7.0\refint\MonoGameLibrary.dll
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\obj\Debug\net8.0-windows7.0\MonoGameLibrary.pdb
+C:\Users\Siegwald\Documents\GitHub\GameProgramming\MonoGameLibrary\obj\Debug\net8.0-windows7.0\ref\MonoGameLibrary.dll
