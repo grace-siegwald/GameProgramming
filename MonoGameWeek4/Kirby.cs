@@ -60,9 +60,9 @@ namespace MonoGameWeek4
 
         private void UpdateFloorCollision()
         {
-            if (Location.Y + Origin.Y * Scale > water.Surface)
+            if (Direction.Y >= 0 && Intersects(water, water.Surface))
             {
-                Location = new Vector2(Location.X, water.Surface - Origin.Y * Scale);
+                Location.Y = water.Surface - Origin.Y;   // put Kirby's bottom on the surface
                 Direction.Y = 0;
                 OnFloor = true;
             }

@@ -231,7 +231,6 @@ namespace MonoGameLibrary.Sprite
         }
 
         #region Sprite Collision
-
         /// <summary>
         /// Checks for intersection of this sprite and another sprite
         /// </summary>
@@ -239,6 +238,11 @@ namespace MonoGameLibrary.Sprite
         /// <returns>true if the two sprites intersect otherwise returns false</returns>
         public bool Intersects(Sprite OtherSprite)
         {
+            return Sprite.Intersects(this.locationRect, OtherSprite.locationRect);
+        }
+        public bool Intersects(Sprite OtherSprite, float offset)
+        {
+            OtherSprite.locationRect.Inflate(offset, 0);
             return Sprite.Intersects(this.locationRect, OtherSprite.locationRect);
         }
 
@@ -251,6 +255,7 @@ namespace MonoGameLibrary.Sprite
         public virtual bool PerPixelCollision(Sprite OtherSprite)
         {
             
+
             Color[] OtherSpriteColors;
             Color[] SpriteColors;
 
