@@ -88,9 +88,9 @@ namespace MonoGameLibrary.Sprite
         protected override void LoadContent()
         {
             //Load texture for sprite Markers
-           this.SpriteMarkersTexture = this.Game.Content.Load<Texture2D>("SpriteMarker");
+            this.SpriteMarkersTexture = this.Game.Content.Load<Texture2D>("SpriteMarker");
             
-            //top left orgin
+            //top left origin
             //this.Origin = Vector2.Zero;
 
             //set default color to white

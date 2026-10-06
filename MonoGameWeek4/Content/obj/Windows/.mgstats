@@ -1,1 +1,7 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/great.png","C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/bin/Windows/great.xnb","TextureProcessor","Texture2DContent",253,2533,0.095084
+"C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/kirbyPink.png","C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/bin/Windows/kirbyPink.xnb","TextureProcessor","Texture2DContent",750,3681,0.0063393
+"C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/kirbyRed.png","C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/bin/Windows/kirbyRed.xnb","TextureProcessor","Texture2DContent",692,3681,0.0093765
+"C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/SpriteMarker.png","C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/bin/Windows/SpriteMarker.xnb","TextureProcessor","Texture2DContent",232,185,0.105441
+"C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/water.png","C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/bin/Windows/water.xnb","TextureProcessor","Texture2DContent",304,21589,0.010183
+"C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/wave.png","C:/Mac/Home/Documents/GitHub/GameProgramming/MonoGameWeek4/Content/bin/Windows/wave.xnb","TextureProcessor","Texture2DContent",1188,15773,0.0053436

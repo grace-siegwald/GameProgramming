@@ -11,3 +11,16 @@ C:\Users\Siegwald\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0
 C:\Users\Siegwald\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0\refint\Week4Library.dll
 C:\Users\Siegwald\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0\Week4Library.pdb
 C:\Users\Siegwald\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0\ref\Week4Library.dll
+C:\Mac\Home\Documents\GitHub\GameProgramming\Week4Library\bin\Debug\net8.0\Week4Library.deps.json
+C:\Mac\Home\Documents\GitHub\GameProgramming\Week4Library\bin\Debug\net8.0\Week4Library.dll
+C:\Mac\Home\Documents\GitHub\GameProgramming\Week4Library\bin\Debug\net8.0\Week4Library.pdb
+C:\Mac\Home\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0\Week4Library.csproj.AssemblyReference.cache
+C:\Mac\Home\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0\Week4Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mac\Home\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0\Week4Library.AssemblyInfoInputs.cache
+C:\Mac\Home\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0\Week4Library.AssemblyInfo.cs
+C:\Mac\Home\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0\Week4Library.csproj.CoreCompileInputs.cache
+C:\Mac\Home\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0\Week4Library.sourcelink.json
+C:\Mac\Home\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0\Week4Library.dll
+C:\Mac\Home\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0\refint\Week4Library.dll
+C:\Mac\Home\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0\Week4Library.pdb
+C:\Mac\Home\Documents\GitHub\GameProgramming\Week4Library\obj\Debug\net8.0\ref\Week4Library.dll

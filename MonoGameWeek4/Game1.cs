@@ -15,11 +15,14 @@ namespace MonoGameWeek4
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        public Texture2D Background;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+
+            this.Components.Add(new WaterFloor(this));
         }
 
         protected override void Initialize()
@@ -32,6 +35,8 @@ namespace MonoGameWeek4
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+            
+            Background = Content.Load<Texture2D>("Background");
 
             // TODO: use this.Content to load your game content here
         }
@@ -49,6 +54,10 @@ namespace MonoGameWeek4
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            _spriteBatch.Begin();
+            _spriteBatch.Draw(Background, new Rectangle(0, 0, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height), Color.White);
+            _spriteBatch.End();
 
             // TODO: Add your drawing code here
 

@@ -10,9 +10,9 @@ using MonoGameLibrary.Sprite;
 
 namespace MonoGameWeek4
 {
-    public class PacMan : DrawableSprite
+    public class Kirby : DrawableSprite
     {
-        public PacMan(Game game) : base(game)
+        public Kirby(Game game) : base(game)
         {
         }
     }

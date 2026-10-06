@@ -18,6 +18,7 @@
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
+/processorParam:Version=3.8.5.1
 /build:Arial.spritefont
 
 #begin SpriteMarker.png
@@ -30,5 +31,6 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
+/processorParam:Version=3.8.5.1
 /build:SpriteMarker.png
 
