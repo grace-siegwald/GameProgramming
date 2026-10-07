@@ -54,11 +54,12 @@ namespace MonoGameWeek4
             UpdateSpriteColor(); // updates the sprite color based on whether Kirby is on the floor or not
         }
 
+        // Checks if space is pressed (and that kirby is on the floor), and if so, sets the direction to jump up and sets OnFloor to false
         private void UpdateJumpInput()
         {
             if (input.WasKeyPressed(Keys.Space) && OnFloor)
             {
-                Direction.Y = -JumpStrength; // Jump Logic, -because we want to go up which is -y
+                Direction.Y = -JumpStrength; // Jump Logic, - because we want to go up it is -y
                 OnFloor = false;
             }
         }
