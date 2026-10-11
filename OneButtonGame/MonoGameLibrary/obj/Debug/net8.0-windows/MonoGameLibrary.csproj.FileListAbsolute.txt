@@ -1,0 +1,16 @@
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net8.0-windows\mgcb.tool.restore
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\bin\Debug\net8.0-windows\Content\Arial.xnb
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\bin\Debug\net8.0-windows\Content\SpriteMarker.xnb
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\bin\Debug\net8.0-windows\MonoGameLibrary.deps.json
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\bin\Debug\net8.0-windows\MonoGameLibrary.dll
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\bin\Debug\net8.0-windows\MonoGameLibrary.pdb
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net8.0-windows\MonoGameLibrary.csproj.AssemblyReference.cache
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net8.0-windows\MonoGameLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net8.0-windows\MonoGameLibrary.AssemblyInfoInputs.cache
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net8.0-windows\MonoGameLibrary.AssemblyInfo.cs
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net8.0-windows\MonoGameLibrary.csproj.CoreCompileInputs.cache
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net8.0-windows\MonoGameLibrary.sourcelink.json
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net8.0-windows\MonoGameLibrary.dll
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net8.0-windows\refint\MonoGameLibrary.dll
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net8.0-windows\MonoGameLibrary.pdb
+C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net8.0-windows\ref\MonoGameLibrary.dll
