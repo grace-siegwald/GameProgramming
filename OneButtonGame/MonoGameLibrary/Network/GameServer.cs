@@ -8,7 +8,6 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using MonoGameLibrary.Network.Serializer;
-using System.Windows.Forms;
 
 namespace MonoGameLibrary.Network.Server
 {

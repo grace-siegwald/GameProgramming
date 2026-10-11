@@ -139,8 +139,8 @@ namespace MonoGameLibrary.Sprite
 
                     // Calculate the bounding rectangle of this block in world space
                     this.locationRect = CalculateBoundingRectangle(
-                             new Rectangle(0, 0, (int)(this.spriteTexture.Width * Scale),
-                                 (int)(this.spriteTexture.Height * Scale)),
+                             new Rectangle(0, 0, (int)(this.spriteTexture.Width),
+                                 (int)(this.spriteTexture.Height)),
                              spriteTransform);
             }
         }

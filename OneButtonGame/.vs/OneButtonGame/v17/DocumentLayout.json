@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\OneButtonGame\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{136C3C93-6D14-C06D-3DBE-468E75475147}|MonoGameLibrary\\MonoGameLibrary.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\onebuttongame\\monogamelibrary\\sprite\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{136C3C93-6D14-C06D-3DBE-468E75475147}|MonoGameLibrary\\MonoGameLibrary.csproj|solutionrelative:monogamelibrary\\sprite\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC2B3751-ED05-4532-BCDF-C8044305BEA7}|OneButtonGame\\OneButtonGame.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\onebuttongame\\onebuttongame\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC2B3751-ED05-4532-BCDF-C8044305BEA7}|OneButtonGame\\OneButtonGame.csproj|solutionrelative:onebuttongame\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,19 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\OneButtonGame\\OneButtonGame\\Game1.cs",
               "RelativeDocumentMoniker": "OneButtonGame\\Game1.cs",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\OneButtonGame\\OneButtonGame\\Game1.cs",
               "RelativeToolTip": "OneButtonGame\\Game1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-11T22:18:00.155Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sprite.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\OneButtonGame\\MonoGameLibrary\\Sprite\\Sprite.cs",
+              "RelativeDocumentMoniker": "MonoGameLibrary\\Sprite\\Sprite.cs",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\OneButtonGame\\MonoGameLibrary\\Sprite\\Sprite.cs",
+              "RelativeToolTip": "MonoGameLibrary\\Sprite\\Sprite.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T22:50:09.307Z",
               "EditorCaption": ""
             }
           ]

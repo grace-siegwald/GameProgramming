@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "QTROqHobtR4=",
-  "success": false,
+  "dgSpecHash": "Zj3IuDJ5Kk8=",
+  "success": true,
   "projectFilePath": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\OneButtonGame\\OneButtonGame\\OneButtonGame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\grace.siegwald\\.nuget\\packages\\monogame.content.builder.task\\3.8.6\\monogame.content.builder.task.3.8.6.nupkg.sha512",
@@ -12,17 +12,5 @@
     "C:\\Users\\grace.siegwald\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\grace.siegwald\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project MonoGameLibrary is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Project MonoGameLibrary supports: net8.0-windows7.0 (.NETCoreApp,Version=v8.0)",
-      "projectPath": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\OneButtonGame\\OneButtonGame\\OneButtonGame.csproj",
-      "filePath": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\OneButtonGame\\OneButtonGame\\OneButtonGame.csproj",
-      "libraryId": "MonoGameLibrary",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }
