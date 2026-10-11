@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\interestingmovement\\interestingmovement\\fpscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|solutionrelative:interestingmovement\\fpscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\interestingmovement\\interestingmovement\\interestingmovement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|solutionrelative:interestingmovement\\interestingmovement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\interestingmovement\\interestingmovement\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|solutionrelative:interestingmovement\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|c:\\mac\\home\\documents\\github\\gameprogramming\\interestingmovement\\interestingmovement\\fpscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DA8DDB1-8C3C-431D-8F37-88AB8219B066}|InterestingMovement\\InterestingMovement.csproj|solutionrelative:interestingmovement\\fpscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,12 +30,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InterestingMovement",
+              "DocumentIndex": 1,
+              "Title": "InterestingMovement.csproj",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\InterestingMovement.csproj",
               "RelativeDocumentMoniker": "InterestingMovement\\InterestingMovement.csproj",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\InterestingMovement.csproj",
@@ -47,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "FPSComponent.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\FPSComponent.cs",
               "RelativeDocumentMoniker": "InterestingMovement\\FPSComponent.cs",
@@ -55,11 +55,12 @@
               "RelativeToolTip": "InterestingMovement\\FPSComponent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T16:58:14.61Z"
+              "WhenOpened": "2026-09-29T16:58:14.61Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\Game1.cs",
               "RelativeDocumentMoniker": "InterestingMovement\\Game1.cs",
@@ -71,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Sprite.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\Sprite.cs",
               "RelativeDocumentMoniker": "InterestingMovement\\Sprite.cs",
@@ -79,12 +80,11 @@
               "RelativeToolTip": "InterestingMovement\\Sprite.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T19:29:35.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T19:29:35.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\InterestingMovement\\InterestingMovement\\Player.cs",
               "RelativeDocumentMoniker": "InterestingMovement\\Player.cs",
