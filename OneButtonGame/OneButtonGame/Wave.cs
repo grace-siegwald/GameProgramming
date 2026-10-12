@@ -24,9 +24,9 @@ namespace OneButtonGame
 
         public Wave(Game game, WaterFloor water) : base(game)
         {
+            //ShowMarkers = true; // uncomment to turn on sprite markers
             this.water = water;
             Scale = 2f;
-            ShowMarkers = true;
         }
         protected override void LoadContent()
         {

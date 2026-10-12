@@ -33,109 +33,160 @@ namespace OneButtonGame
     }
     public class Kirby : DrawableSprite
     {
-        WaterFloor water;
-        Texture2D defualtSprite;
-        Texture2D hurtSprite;
+        WaterFloor water; // needs to know about the water for the floor
 
         // Lives and such :)
         public int Lives {  get; private set; }
         public int StartLives = 3;
-        private float flashTimer = 0; // amount of time he flashes red sprite
+        public float HurtTime = 1f; // how long he stays in the Hurt state, 1 second for now, can be changed mayhaps
+        private float hurtTimer = 0; // seconds left in the Hurt state
 
         // Physics and state
         public float Gravity = 8f;
         public float JumpStrength = 5f;
         public bool OnFloor {  get; private set; }
 
+        // Animations and animation manager! Kirby decides what to play, the animator handes the "how"
+        public KirbyState State { get; private set; } // encapsulated because why not bruv
+        AnimationManager animator = new AnimationManager(); 
+        Animation groundedAnim;
+        Animation ascendingAnim;
+        Animation fallingAnim;
+        Animation hurtAnim;
+
         public Kirby(Game game, WaterFloor water) : base(game)
         {
-            ShowMarkers = true;
+            //ShowMarkers = true; // uncomment to turn on sprite markers
             this.water = water; // grabbing reference to water floor because we neeeeeeed it!
             Scale = 2f; // scale to match the widow size
         }
 
         protected override void LoadContent()
         {
-            defualtSprite = Game.Content.Load<Texture2D>("kirbyPink");
-            hurtSprite = Game.Content.Load<Texture2D>("kirbyRed");
-            SpriteTexture = defualtSprite;
+            // --- Grounded Animation ---
+            Texture2D[] groundedFrames =
+            {
+                Game.Content.Load<Texture2D>("Kirby/ride0"), Game.Content.Load<Texture2D>("Kirby/ride1"), Game.Content.Load<Texture2D>("Kirby/ride2")
+            };
+            groundedAnim = new Animation(groundedFrames, 0.15f, true);
+            
+            // --- Ascending Animation ---
+            Texture2D[] ascendingFrames =
+            {
+                Game.Content.Load<Texture2D>("Kirby/rise0"), Game.Content.Load<Texture2D>("Kirby/rise1"), Game.Content.Load<Texture2D>("Kirby/rise2")
+            };
+            ascendingAnim = new Animation(ascendingFrames, 0.08f, false);
 
+            // --- Falling Animation ---
+            Texture2D[] fallingFrames =
+            {
+                Game.Content.Load<Texture2D>("Kirby/fall0"), Game.Content.Load<Texture2D>("Kirby/fall1"), Game.Content.Load<Texture2D>("Kirby/fall2")
+            };
+            fallingAnim = new Animation(fallingFrames, 0.08f, false);
+
+            // --- Hurt Animation --- 
+            Texture2D[] hurtFrames =
+            {
+                Game.Content.Load<Texture2D>("Kirby/hurt0"), Game.Content.Load<Texture2D>("Kirby/hurt1")
+            };
+            hurtAnim = new Animation(hurtFrames, 0.1f, true);
+
+            SpriteTexture = groundedAnim.Frames[0];   // needs a texture BEFORE base.LoadContent sets the Origin so that it actually has a texture to assess lol
             base.LoadContent();
-
             Reset();
         }
         public void Reset() // Resets kirby for another round of WAVES BABY, all the stuff that puts bro in place
         {
             Lives = StartLives;
-            Location = new Vector2(GraphicsDevice.Viewport.Width / 4, GraphicsDevice.Viewport.Height / 2);
+            Location = new Vector2(GraphicsDevice.Viewport.Width / 4, water.Surface);
+            ChangeState(KirbyState.Grounded);
             Direction = Vector2.Zero;
             Speed = 100;
             OnFloor = false;
-            flashTimer = 0; 
+            hurtTimer = 0;
         }
 
         public void Hit() // this what happens when he gets hit, called by the manager
         {
             Lives--; // loses a life
-            flashTimer = 1f; // he blinks for 1 second, can be changed later :)
+            hurtTimer = HurtTime;
+        }
+        public void Jump()
+        {
+            if (OnFloor)
+            {
+                Direction.Y = -JumpStrength; // -y is UP
+                OnFloor = false;
+            }
         }
 
         public override void Update(GameTime gameTime)
         {
+            // -- Gravity, Movement, and Floor Collision --
             float time = (float)gameTime.ElapsedGameTime.TotalSeconds;
-
             if (!OnFloor)
             {
                 Direction.Y += Gravity * time; // Gravity Logic
             }
             Location += Direction * Speed * time; // Movement Logic
-
             base.Update(gameTime); // must call the base update HERE to make sure it's drawn in right place
+            UpdateFloorCollision(); 
 
-            UpdateFlash(time);
-            UpdateFloorCollision();
+            // --- State Stuff ---
+            if (hurtTimer > 0)
+            {
+                hurtTimer -= time;
+            }
+            UpdateState(); // THREE IMPORTANT THINGS: deciding what state we're in...
+            animator.Update(time); // ...moving to the next frame with the animator...
+            SpriteTexture = animator.CurrentFrame; // ...and setting the texture to the current frame's texture
         }
-
-        public void UpdateFlash(float time)
+        private void UpdateState()
         {
-            if (flashTimer > 0) // only proceeds if timer has actually been set 
-            {
-                flashTimer -= time;
+            KirbyState newState;
 
-                // switches sprite every 0.1 seconds so he blinks - Wrote with the help of claude
-                if ((int)(flashTimer * 10) % 2 == 0) // the % calculates the remainder after dividing the left and right side.
-                {
-                    SetTexture(hurtSprite);
-                }
-                else
-                {
-                    SetTexture(defualtSprite);
-                }
-            }
-            else
+            if (hurtTimer > 0) // if hurt timer is greater than zero we know he's been hurt!
             {
-                SetTexture(defualtSprite);
+                newState = KirbyState.Hurt;
+            }
+            else if (OnFloor)
+            {
+                newState = KirbyState.Grounded;
+            }
+            else if (this.Direction.Y < 0) // if direction is negitive, otherwise know as UP
+            {
+                newState = KirbyState.Ascending;
+            } 
+            else // last posibility, no need to define conditions!
+            {
+                newState = KirbyState.Falling;
+            }
+
+            if (newState != State) // only restarts the animation when the state ACTUALLY CHANGES
+            {
+                ChangeState(newState);
             }
         }
-
-        // just a helpful method so we only swap textures when... the texture actually changes
-        // needed because we are setting texture in update loop, don't wanna do that 60 times per second!
-        private void SetTexture(Texture2D texture)
+        private void ChangeState(KirbyState newState)
         {
-            if (SpriteTexture != texture)
+            State = newState;
+            animator.Play(GetAnimation(newState));
+        }
+        private Animation GetAnimation(KirbyState state)
+        {
+            switch (state)
             {
-                spriteTexture = texture;
+                case KirbyState.Hurt:
+                    return hurtAnim;
+                case KirbyState.Falling:
+                    return fallingAnim;
+                case KirbyState.Ascending:
+                    return ascendingAnim;
+                default:
+                    return groundedAnim;
             }
         }
 
-        public void Jump()
-        {
-            if (OnFloor)
-            {
-                Direction.Y = -JumpStrength;
-                OnFloor = false;
-            }
-        }
         private void UpdateFloorCollision()
         {
             if (Direction.Y >= 0 && Intersects(water)) // if Kirby is "falling" and his rectangle intersects with the water rectangle

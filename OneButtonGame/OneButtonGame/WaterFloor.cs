@@ -21,8 +21,8 @@ namespace OneButtonGame
         }
         public WaterFloor(Game game) : base(game)
         {
+            //ShowMarkers = true; // uncomment to turn on sprite markers
             Scale = 2f; // scale to match the window size
-            ShowMarkers = true;
         }
 
         protected override void LoadContent()
