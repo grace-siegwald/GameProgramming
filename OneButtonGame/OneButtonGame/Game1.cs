@@ -19,6 +19,7 @@ namespace OneButtonGame
         public Texture2D Background;
 
         InputHandler input;
+        WaveRideManager waveRideManager;
         WaterFloor water;
         Wave wave;
         Kirby kirby;
@@ -40,8 +41,11 @@ namespace OneButtonGame
             kirby = new Kirby(this, water);
             Components.Add(kirby);
 
-            wave = new Wave(this);
+            wave = new Wave(this, water);
             Components.Add(wave);
+
+            waveRideManager = new WaveRideManager(this, kirby, wave); // last thing we add because we need kirby and wave
+            Components.Add(waveRideManager);
         }
 
         protected override void Initialize()

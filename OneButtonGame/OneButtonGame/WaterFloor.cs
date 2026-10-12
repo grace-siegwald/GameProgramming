@@ -13,6 +13,12 @@ namespace OneButtonGame
     public class WaterFloor : DrawableSprite
     {
         public int SinkDepth;
+
+        // the y position that things "stand on"
+        public float Surface // property so it's always calculated from the water surfaces current location
+        {
+            get { return this.Location.Y - Origin.Y * Scale + SinkDepth; }
+        }
         public WaterFloor(Game game) : base(game)
         {
             Scale = 2f; // scale to match the window size

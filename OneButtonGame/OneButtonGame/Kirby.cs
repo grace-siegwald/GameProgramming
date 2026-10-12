@@ -15,7 +15,15 @@ namespace OneButtonGame
     {
         IInputHandler input;
         WaterFloor water;
+        Texture2D defualtSprite;
+        Texture2D hurtSprite;
 
+        // Lives and such :)
+        public int Lives;
+        public int StartLives = 3;
+        private float flashTimer = 0; // amount of time he flashes red sprite
+
+        // Physics and state
         public float Gravity = 6f;
         public float JumpStrength = 5f;
         public bool OnFloor;
@@ -30,28 +38,68 @@ namespace OneButtonGame
         protected override void LoadContent()
         {
             input = Game.Services.GetService<IInputHandler>();
-            SpriteTexture = Game.Content.Load<Texture2D>("kirbyPink");
+
+            defualtSprite = Game.Content.Load<Texture2D>("kirbyPink");
+            hurtSprite = Game.Content.Load<Texture2D>("kirbyRed");
+            SpriteTexture = defualtSprite;
+
             base.LoadContent();
-            Speed = 100;
-            Direction = Vector2.Zero;
+
+            Reset();
+        }
+        public void Reset() // Resets kirby for another round of WAVES BABY, all the stuff that puts bro in place
+        {
+            Lives = StartLives;
             Location = new Vector2(GraphicsDevice.Viewport.Width / 4, GraphicsDevice.Viewport.Height / 2);
+            Direction = Vector2.Zero;
+            Speed = 100;
+            OnFloor = false;
+            flashTimer = 0; 
+        }
+
+        public void Hit() // this what happens when he gets hit, called by the manager
+        {
+            Lives--; // loses a life
+            flashTimer = 1f; // he blinks for 1 second, can be changed later :)
         }
 
         public override void Update(GameTime gameTime)
         {
-            float time = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+            float time = (float)gameTime.ElapsedGameTime.Seconds;
 
             UpdateJumpInput();
             if (!OnFloor)
             {
-                Direction.Y += Gravity * (time / 1000); // Gravity Logic
+                Direction.Y += Gravity * time; // Gravity Logic
             }
-            Location += Direction * Speed * (time / 1000); // Movement Logic
+            Location += Direction * Speed * time; // Movement Logic
 
             base.Update(gameTime); // must call the base update HERE to make sure it's drawn in right place
 
+            UpdateFlash(time);
             UpdateFloorCollision();
-            UpdateSpriteColor(); // updates the sprite color based on whether Kirby is on the floor or not
+        }
+
+        public void UpdateFlash(float time)
+        {
+            if (flashTimer > 0) // only proceeds if timer has actually been set 
+            {
+                flashTimer -= time;
+
+                // switches sprite every 0.1 seconds so he blinks - Wrote with the help of claude
+                if ((int)(flashTimer * 10) % 2 == 0) // the % calculates the remainder after dividing the left and right side.
+                {
+                    SpriteTexture = hurtSprite; 
+                }
+                else
+                {
+                    SpriteTexture = defualtSprite;
+                }
+            }
+            else
+            {
+                SpriteTexture = defualtSprite;
+            }
         }
 
         // Checks if space is pressed (and that kirby is on the floor), and if so, sets the direction to jump up and sets OnFloor to false
@@ -77,18 +125,6 @@ namespace OneButtonGame
 
                 Direction.Y = 0; // stops bro from jittering, direction must be set to 0 when he hits the floor
                 OnFloor = true; // needs to be true so Kirby can jump again, otherwise he would be STUCK
-            }
-        }
-
-        private void UpdateSpriteColor()
-        {
-            if (OnFloor)
-            {
-                SpriteTexture = Game.Content.Load<Texture2D>("kirbyRed");
-            }
-            else
-            {
-                SpriteTexture = Game.Content.Load<Texture2D>("kirbyPink");
             }
         }
     }
