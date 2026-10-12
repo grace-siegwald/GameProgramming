@@ -19,7 +19,8 @@ namespace OneButtonGame
         public Texture2D Background;
 
         InputHandler input;
-        WaveRideManager waveRideManager;
+        GameManager waveRideManager;
+        HUD hud;
         WaterFloor water;
         Wave wave;
         Kirby kirby;
@@ -31,6 +32,7 @@ namespace OneButtonGame
             IsMouseVisible = true;
             _graphics.PreferredBackBufferWidth = (int)(256 * WindowScaler);   // same size as the background sprite
             _graphics.PreferredBackBufferHeight = (int)(258 * WindowScaler);
+            Window.Title = "Kirby Wave Ride";
 
             input = new InputHandler(this);
             Components.Add(input);
@@ -44,14 +46,15 @@ namespace OneButtonGame
             wave = new Wave(this, water);
             Components.Add(wave);
 
-            waveRideManager = new WaveRideManager(this, kirby, wave); // last thing we add because we need kirby and wave
+            waveRideManager = new GameManager(this, kirby, wave); // last thing we add because we need kirby and wave
             Components.Add(waveRideManager);
+
+            hud = new HUD(this, waveRideManager);
+            Components.Add(hud);
         }
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-
             base.Initialize();
         }
 

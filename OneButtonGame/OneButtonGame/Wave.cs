@@ -56,7 +56,7 @@ namespace OneButtonGame
             }
             base.Update(gameTime);
         }
-        public void Reset()
+        public void Reset() // setting back to "defualt" state
         {
             Speed = StartSpeed;
             NextWave();

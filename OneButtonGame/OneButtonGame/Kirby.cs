@@ -13,7 +13,6 @@ namespace OneButtonGame
 {
     public class Kirby : DrawableSprite
     {
-        IInputHandler input;
         WaterFloor water;
         Texture2D defualtSprite;
         Texture2D hurtSprite;
@@ -37,8 +36,6 @@ namespace OneButtonGame
 
         protected override void LoadContent()
         {
-            input = Game.Services.GetService<IInputHandler>();
-
             defualtSprite = Game.Content.Load<Texture2D>("kirbyPink");
             hurtSprite = Game.Content.Load<Texture2D>("kirbyRed");
             SpriteTexture = defualtSprite;
@@ -67,7 +64,6 @@ namespace OneButtonGame
         {
             float time = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            UpdateJumpInput();
             if (!OnFloor)
             {
                 Direction.Y += Gravity * time; // Gravity Logic
@@ -112,16 +108,14 @@ namespace OneButtonGame
             }
         }
 
-        // Checks if space is pressed (and that kirby is on the floor), and if so, sets the direction to jump up and sets OnFloor to false
-        private void UpdateJumpInput()
+        public void Jump()
         {
-            if (input.WasKeyPressed(Keys.Space) && OnFloor)
+            if (OnFloor)
             {
-                Direction.Y = -JumpStrength; // Jump Logic, - because we want to go up it is -y
+                Direction.Y = -JumpStrength;
                 OnFloor = false;
             }
         }
-
         private void UpdateFloorCollision()
         {
             if (Direction.Y >= 0 && Intersects(water)) // if Kirby is "falling" and his rectangle intersects with the water rectangle
