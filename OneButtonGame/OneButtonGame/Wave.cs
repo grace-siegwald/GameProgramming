@@ -20,7 +20,7 @@ namespace OneButtonGame
         public float StartSpeed = 200f; // speed at the start of the game
         public float SpeedIncrease = 20f; // incrememnt of speed increase per wave
         public float SpeedCap = 400f; // so we don't get TOO crazy ykwim :0
-        public bool Counted; // keep track of whether kirby has hit the wave or jumped over it, needed for counting score :)
+        public bool Counted; // keep track of whether kirby has hit the wave or jumped over it, needed for counting score and so getting hit only takes ONE life :)
 
         public Wave(Game game, WaterFloor water) : base(game)
         {
@@ -43,7 +43,7 @@ namespace OneButtonGame
             if (Location.X < -this.Origin.X * Scale) // if the wave is off the screen...
             {
                 // And we're not at the speed cap yet...
-                if (this.Speed != SpeedCap)
+                if (this.Speed < SpeedCap)
                 {
                     // Make the wave faster and send it again!
                     Speed += SpeedIncrease;

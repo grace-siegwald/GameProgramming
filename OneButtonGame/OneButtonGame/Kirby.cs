@@ -65,7 +65,7 @@ namespace OneButtonGame
 
         public override void Update(GameTime gameTime)
         {
-            float time = (float)gameTime.ElapsedGameTime.Seconds;
+            float time = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
             UpdateJumpInput();
             if (!OnFloor)
@@ -89,16 +89,26 @@ namespace OneButtonGame
                 // switches sprite every 0.1 seconds so he blinks - Wrote with the help of claude
                 if ((int)(flashTimer * 10) % 2 == 0) // the % calculates the remainder after dividing the left and right side.
                 {
-                    SpriteTexture = hurtSprite; 
+                    SetTexture(hurtSprite);
                 }
                 else
                 {
-                    SpriteTexture = defualtSprite;
+                    SetTexture(defualtSprite);
                 }
             }
             else
             {
-                SpriteTexture = defualtSprite;
+                SetTexture(defualtSprite);
+            }
+        }
+
+        // just a helpful method so we only swap textures when... the texture actually changes
+        // needed because we are setting texture in update loop, don't wanna do that 60 times per second!
+        private void SetTexture(Texture2D texture)
+        {
+            if (SpriteTexture != texture)
+            {
+                spriteTexture = texture;
             }
         }
 

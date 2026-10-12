@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OneButtonGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a6df6fabc49f122c82ead256db4452756cba353")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2baa74efedcf27897347cb61afd00d35156cbe21")]
 [assembly: System.Reflection.AssemblyProductAttribute("OneButtonGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OneButtonGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
