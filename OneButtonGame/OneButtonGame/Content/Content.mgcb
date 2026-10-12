@@ -26,6 +26,14 @@
 /processorParam:Version=3.8.5.1
 /build:background.png
 
+#begin daydreamFont.otf
+/importer:FontImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/processorParam:Version=3.8.5.1
+/build:daydreamFont.otf
+
 #begin great.png
 /importer:TextureImporter
 /processor:TextureProcessor

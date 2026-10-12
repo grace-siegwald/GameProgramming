@@ -5,6 +5,7 @@
   <Config />
   <SourceFiles>
     <File>C:/Mac/Home/Documents/GitHub/GameProgramming/OneButtonGame/OneButtonGame/Content/background.png</File>
+    <File>C:/Mac/Home/Documents/GitHub/GameProgramming/OneButtonGame/OneButtonGame/Content/daydreamFont.otf</File>
     <File>C:/Mac/Home/Documents/GitHub/GameProgramming/OneButtonGame/OneButtonGame/Content/great.png</File>
     <File>C:/Mac/Home/Documents/GitHub/GameProgramming/OneButtonGame/OneButtonGame/Content/kirbyPink.png</File>
     <File>C:/Mac/Home/Documents/GitHub/GameProgramming/OneButtonGame/OneButtonGame/Content/kirbyRed.png</File>
@@ -13,6 +14,7 @@
     <File>C:/Mac/Home/Documents/GitHub/GameProgramming/OneButtonGame/OneButtonGame/Content/wave.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
