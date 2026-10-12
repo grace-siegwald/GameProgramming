@@ -65,13 +65,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-05T21:22:33.492Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MonoGameWeek4",
+              "Title": "MonoGameWeek4.csproj",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\MonoGameWeek4\\MonoGameWeek4.csproj",
               "RelativeDocumentMoniker": "MonoGameWeek4.csproj",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\GameProgramming\\MonoGameWeek4\\MonoGameWeek4.csproj",
