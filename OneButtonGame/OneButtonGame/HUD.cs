@@ -71,7 +71,7 @@ namespace OneButtonGame
                         "Press SPACE to jump",
                         "",
                         "Clear " + manager.WavesToWin + " waves to win",
-                        "3 hits = Lose",
+                        "3 hits and lose",
                         "Bonus points for keeing your lives!",
                         "",
                         "Press SPACE to start"
@@ -84,7 +84,7 @@ namespace OneButtonGame
 
                     if (ratingTimer > 0)
                     {
-                        Vector2 position = new Vector2((GraphicsDevice.Viewport.Width - ratingTexture.Width * 2) / 2, 150);
+                        Vector2 position = new Vector2((GraphicsDevice.Viewport.Width - ratingTexture.Width * 4) / 2, 150);
                         spriteBatch.Draw(ratingTexture, position, null, Color.White, 0f, Vector2.Zero, 4f, SpriteEffects.None, 0f);
                     }
                     break;

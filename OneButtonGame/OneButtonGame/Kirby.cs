@@ -11,6 +11,12 @@ using MonoGameLibrary.Util;
 
 namespace OneButtonGame
 {
+    public enum KirbyState
+    {
+        Grounded,
+        Ascending,
+        Falling
+    }
     public class Kirby : DrawableSprite
     {
         WaterFloor water;
@@ -18,14 +24,14 @@ namespace OneButtonGame
         Texture2D hurtSprite;
 
         // Lives and such :)
-        public int Lives;
+        public int Lives {  get; private set; }
         public int StartLives = 3;
         private float flashTimer = 0; // amount of time he flashes red sprite
 
         // Physics and state
         public float Gravity = 6f;
         public float JumpStrength = 5f;
-        public bool OnFloor;
+        public bool OnFloor {  get; private set; }
 
         public Kirby(Game game, WaterFloor water) : base(game)
         {

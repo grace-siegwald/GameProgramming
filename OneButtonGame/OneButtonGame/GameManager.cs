@@ -70,6 +70,7 @@ namespace OneButtonGame
                     CheckWinOrLose();
                     break;
                 case GameState.Won:
+                    if (buttonPressed) { StartGame(); } // loop back to the start of the game
                     break;
                 case GameState.Lost:
                     if (buttonPressed) { StartGame(); }
@@ -96,8 +97,8 @@ namespace OneButtonGame
             // hitbox intersection check first, then pixel collision check because that wave is not a rectangle lol
             if (kirby.Intersects(wave) && kirby.PerPixelCollisionWTansform(wave))
             {
-                kirby.Hit();    
-                wave.Counted = true; //
+                kirby.Hit();
+                wave.MarkCounted(); 
             }
         }
         private void CheckJumped()
@@ -108,7 +109,7 @@ namespace OneButtonGame
             if (kirby.LocationRect.Left > wave.LocationRect.Right) 
             {
                 Score++; // increment the score
-                wave.Counted = true; 
+                wave.MarkCounted();
             }
         }
         private void CheckWinOrLose()
