@@ -1,3 +1,0 @@
-Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Mac/Home/Documents/GitHub/GameProgramming/OneButtonGame/MonoGameLibrary/Content/Arial.spritefont","C:/Mac/Home/Documents/GitHub/GameProgramming/OneButtonGame/MonoGameLibrary/Content/bin/Windows/Content/Arial.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21529,0.2028912
-"C:/Mac/Home/Documents/GitHub/GameProgramming/OneButtonGame/MonoGameLibrary/Content/SpriteMarker.png","C:/Mac/Home/Documents/GitHub/GameProgramming/OneButtonGame/MonoGameLibrary/Content/bin/Windows/Content/SpriteMarker.xnb","TextureProcessor","Texture2DContent",232,185,0.0203124

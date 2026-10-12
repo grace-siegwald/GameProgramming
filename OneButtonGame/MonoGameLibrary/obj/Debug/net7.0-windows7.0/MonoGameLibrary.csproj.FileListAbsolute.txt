@@ -1,6 +1,0 @@
-C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net7.0-windows7.0\mgcb.tool.restore
-C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net7.0-windows7.0\MonoGameLibrary.GeneratedMSBuildEditorConfig.editorconfig
-C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net7.0-windows7.0\MonoGameLibrary.AssemblyInfoInputs.cache
-C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net7.0-windows7.0\MonoGameLibrary.AssemblyInfo.cs
-C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net7.0-windows7.0\MonoGameLibrary.csproj.CoreCompileInputs.cache
-C:\Mac\Home\Documents\GitHub\GameProgramming\OneButtonGame\MonoGameLibrary\obj\Debug\net7.0-windows7.0\MonoGameLibrary.sourcelink.json
