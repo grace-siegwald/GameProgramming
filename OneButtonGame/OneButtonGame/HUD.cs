@@ -66,8 +66,6 @@ namespace OneButtonGame
                 // I had Claude help me with the text formating methods because HEADACHE
                 case GameState.Title:
                     DrawCenteredLines(new string[] {
-                        "KIRBY WAVE RIDE",
-                        "",
                         "Press SPACE to jump",
                         "",
                         "Clear " + manager.WavesToWin + " waves to win",

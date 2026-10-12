@@ -129,6 +129,7 @@ namespace OneButtonGame
         {
             State = state;
             wave.Enabled = false; // freezes wave, claude helped me find this it's COOL
+            kirby.Enabled = false;
 
             if (Score > HighScore)
             {

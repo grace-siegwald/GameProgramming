@@ -32,7 +32,7 @@ namespace OneButtonGame
             IsMouseVisible = true;
             _graphics.PreferredBackBufferWidth = (int)(256 * WindowScaler);   // same size as the background sprite
             _graphics.PreferredBackBufferHeight = (int)(258 * WindowScaler);
-            Window.Title = "Kirby Wave Ride";
+            Window.Title = "Kirby Wave Jump";
 
             input = new InputHandler(this);
             Components.Add(input);
