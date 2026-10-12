@@ -9,13 +9,27 @@ using Microsoft.Xna.Framework.Input;
 using MonoGameLibrary.Sprite;
 using MonoGameLibrary.Util;
 
+/*
+ * After I built the core features of the game, I had Claude help me build an Animation system to spice things up.
+ * The conversation can be found in *put file name here*
+ * But a quick rundown:
+ * 
+ * Classes: 
+ *      Animation - Just handles the data (the frames, how fast it goes, and whether it loops)
+ *      AnimationManager - Same concept as the GameManager, choses *which* animation is playing, which frame, and the timer
+ *      Kirby - Decides what state he’s in, tells the manager what to play, and shows the current frame
+ * 
+ * Have it split up this way so that only KIRBY knows about kirby. Animation and AnimationManager know nothing about kirby,
+ * so any other class could use them (wave perhaps???)
+ */
 namespace OneButtonGame
 {
     public enum KirbyState
     {
         Grounded,
         Ascending,
-        Falling
+        Falling,
+        Hurt
     }
     public class Kirby : DrawableSprite
     {
@@ -29,7 +43,7 @@ namespace OneButtonGame
         private float flashTimer = 0; // amount of time he flashes red sprite
 
         // Physics and state
-        public float Gravity = 6f;
+        public float Gravity = 8f;
         public float JumpStrength = 5f;
         public bool OnFloor {  get; private set; }
 
