@@ -11,7 +11,7 @@ using MonoGameLibrary.Util;
 
 /*
  * After I built the core features of the game, I had Claude help me build an Animation system to spice things up.
- * The conversation can be found in *put file name here*
+ * The conversation can be found in "OneButtonGame\Kirby_Animation_States_Conversation.md\"
  * But a quick rundown:
  * 
  * Classes: 
@@ -43,7 +43,8 @@ namespace OneButtonGame
 
         // Physics and state
         public float Gravity = 8f;
-        public float JumpStrength = 5f;
+        public float JumpStrength = 5f; // the strength of a FULL jump (holding button)
+        public float JumpCutSpeed = 2f; // the speed of a jump after letting go of space early, allows for two jump variations (lower = shorter tap jumps)
         public bool OnFloor {  get; private set; }
 
         // Animations and animation manager! Kirby decides what to play, the animator handes the "how"
@@ -119,7 +120,13 @@ namespace OneButtonGame
                 OnFloor = false;
             }
         }
-
+        public void ReleaseJump()
+        {
+            if (Direction.Y > -JumpCutSpeed)
+            {
+                Direction.Y = -JumpCutSpeed;
+            }
+        }
         public override void Update(GameTime gameTime)
         {
             // -- Gravity, Movement, and Floor Collision --
