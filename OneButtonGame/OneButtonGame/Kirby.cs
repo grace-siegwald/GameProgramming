@@ -64,6 +64,8 @@ namespace OneButtonGame
 
         protected override void LoadContent()
         {
+            Location = new Vector2(-100, 100); // just spawn away from screen lil dude
+            
             // --- Grounded Animation ---
             Texture2D[] groundedFrames =
             {

@@ -13,6 +13,22 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin 8-bit Arcade In.ttf
+/importer:FontImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/processorParam:Version=3.8.5.1
+/build:8-bit Arcade In.ttf
+
+#begin 8-bit Arcade Out.ttf
+/importer:FontImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/processorParam:Version=3.8.5.1
+/build:8-bit Arcade Out.ttf
+
 #begin background.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -228,6 +244,40 @@
 /processorParam:TextureFormat=Color
 /processorParam:Version=3.8.5.1
 /build:kirbyRed.png
+
+#begin pinkTallPanel_normal.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/processorParam:Version=3.8.5.1
+/build:pinkTallPanel_normal.png
+
+#begin Pixelate-Regular.ttf
+/importer:FontImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/processorParam:Version=3.8.5.1
+/build:Pixelate-Regular.ttf
+
+#begin purpleFrame.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/processorParam:Version=3.8.5.1
+/build:purpleFrame.png
 
 #begin SpriteMarker.png
 /importer:TextureImporter

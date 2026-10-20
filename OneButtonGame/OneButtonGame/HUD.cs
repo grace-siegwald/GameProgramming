@@ -1,11 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace OneButtonGame
 {
@@ -17,8 +11,13 @@ namespace OneButtonGame
         SpriteBatch spriteBatch;
         SpriteFont spriteFont;
         Texture2D ratingTexture;
+        Texture2D purpleFrame; // title + end screens
+        Texture2D pinkPanel; // playing HUD
+        public Vector2 FrameScale = new Vector2(3f, 3f); // purple frame: 3x wide, 3x tall
+        public Vector2 PanelScale = new Vector2(1.5f, 0.8f); // pink panel: wider than tall, to fit 3 short lines
+        public int PanelTop = 8; // how far down from the top the pink panel sits
 
-        public float TextScale = 1f; // easy to scale the font if too big or small :)
+        public float TextScale = 2f; // easy to scale the font if too big or small :)
 
         int lastScore;
         float ratingTimer = 0f;
@@ -31,9 +30,11 @@ namespace OneButtonGame
         protected override void LoadContent()
         {
             this.spriteBatch = new SpriteBatch(GraphicsDevice);
-            this.spriteFont = Game.Content.Load<SpriteFont>("daydreamFont");
+            this.spriteFont = Game.Content.Load<SpriteFont>("Pixelate-Regular");
             spriteFont.DefaultCharacter = ' '; // Needed this to prevent from crashing, claude found this error, the font I downloaded has no : or -
-            this.ratingTexture = Game.Content.Load<Texture2D>("great");
+            purpleFrame = Game.Content.Load<Texture2D>("purpleFrame");
+            pinkPanel = Game.Content.Load<Texture2D>("pinkTallPanel_normal");
+            ratingTexture = Game.Content.Load<Texture2D>("great");
 
             base.LoadContent();
         }
@@ -61,24 +62,22 @@ namespace OneButtonGame
         {
             spriteBatch.Begin();
 
+            DrawHUDFrame();
+
             switch (manager.State)
             {
                 // I had Claude help me with the text formating methods because HEADACHE
                 case GameState.Title:
                     DrawCenteredLines(new string[] {
                         "Press SPACE to jump",
-                        "",
-                        "Clear " + manager.WavesToWin + " waves to win",
-                        "3 hits and lose",
-                        "Bonus points for keeing your lives!",
-                        "",
-                        "Press SPACE to start"
-                    }, 90);
+                    }, 250);
                     break;
                 case GameState.Playing:
-                    DrawText("Waves " + manager.Score + "/" + manager.WavesToWin, new Vector2(12, 12));
-                    DrawText("Lives " + manager.Lives, new Vector2(12, 12 + LineHeight()));
-                    DrawText("Best " + manager.HighScore, new Vector2(12, 12 + LineHeight() * 2));
+                    DrawCenteredLines(new string[] {
+                        "Waves " + manager.Score + "/" + manager.WavesToWin,
+                        "Lives " + manager.Lives,
+                        "Best " + manager.HighScore
+                    }, PanelTop + 16);
 
                     if (ratingTimer > 0)
                     {
@@ -98,6 +97,7 @@ namespace OneButtonGame
                     }, 120);
                     break;
                 case GameState.Lost:
+                    DrawHUDFrame();
                     DrawCenteredLines(new string[] {
                         "GAME OVER",
                         "",
@@ -112,6 +112,29 @@ namespace OneButtonGame
             spriteBatch.End();
             
             base.Draw(gameTime);
+        }
+
+        // Draws the panel BEHIND the text for whichever screen we're on
+        private void DrawHUDFrame()
+        {
+            int screenWidth = GraphicsDevice.Viewport.Width;
+            int screenHeight = GraphicsDevice.Viewport.Height;
+
+            if (manager.State == GameState.Playing)
+            {
+                // Pink panel, centered left-to-right at the top of the screen
+                float width = pinkPanel.Width * PanelScale.X;
+                Vector2 position = new Vector2((screenWidth - width) / 2, PanelTop);
+                spriteBatch.Draw(pinkPanel, position, null, Color.White, 0f, Vector2.Zero, PanelScale, SpriteEffects.None, 0f);
+            }
+            else
+            {
+                // Purple frame, centered in the middle of the screen
+                float width = purpleFrame.Width * FrameScale.X;
+                float height = purpleFrame.Height * FrameScale.Y;
+                Vector2 position = new Vector2((screenWidth - width) / 2, (screenHeight - height) / 2);
+                spriteBatch.Draw(purpleFrame, position, null, Color.White, 0f, Vector2.Zero, FrameScale, SpriteEffects.None, 0f);
+            }
         }
 
         // ----------- Here are the drawing helpers that Claude wrote ---------------

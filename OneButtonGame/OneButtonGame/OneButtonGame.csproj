@@ -18,4 +18,7 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\MonoGameLibrary\MonoGameLibrary.csproj" />
 	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Icon.bmp" LogicalName="Icon.bmp" />
+	</ItemGroup>
 </Project>

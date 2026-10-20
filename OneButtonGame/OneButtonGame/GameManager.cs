@@ -1,12 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using MonoGameLibrary.Util;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OneButtonGame
 {
@@ -23,7 +17,7 @@ namespace OneButtonGame
     public class GameManager : GameComponent
     {
         Kirby kirby;
-        Wave wave;
+        ObstacleSpawner spawner;
         IInputHandler input;
 
         // These are our PROPERTIES. Wow. So official
@@ -39,17 +33,17 @@ namespace OneButtonGame
         public int Lives { get { return kirby.Lives; } } // just so we can get the lives on the hub without instantiating a whole new kirby
 
 
-        public GameManager(Game game, Kirby kirby, Wave wave) : base(game)
+        public GameManager(Game game, Kirby kirby, ObstacleSpawner spawner) : base(game)
         {
             this.kirby = kirby;
-            this.wave = wave;
+            this.spawner = spawner;
         }
 
         public override void Initialize()
         {
             input = Game.Services.GetService<IInputHandler>();
             State = GameState.Title; // obviously the state we start the game in
-            wave.Enabled = false; // so there's no waves on the title screen :)
+            spawner.Enabled = false;   // no waves on the title screen :)
             base.Initialize();
         }
 
@@ -85,8 +79,8 @@ namespace OneButtonGame
         private void StartGame()
         {
             kirby.Reset();
-            wave.Reset();
-            wave.Enabled = true;
+            kirby.Enabled = true;   // undo EndGame turning him off
+            spawner.Reset();
 
             Score = 0;
             NewHighScore = false;
@@ -95,24 +89,28 @@ namespace OneButtonGame
 
         private void CheckHit()
         {
-            if (wave.Counted) {return;} // we get outa here if the wave has already been counted (either hit kirby or jumped over)
-
-            // hitbox intersection check first, then pixel collision check because that wave is not a rectangle lol
-            if (kirby.Intersects(wave) && kirby.PerPixelCollisionWTansform(wave))
+            foreach (Wave wave in spawner.Waves)
             {
-                kirby.Hit();
-                wave.MarkCounted(); 
+                if (!wave.Active || wave.Counted) { continue; }   // skip waves that aren't out, or already counted
+
+                if (kirby.Intersects(wave) && kirby.PerPixelCollisionWTansform(wave))
+                {
+                    kirby.Hit();
+                    wave.MarkCounted();
+                }
             }
         }
         private void CheckJumped()
         {
-            if (wave.Counted) {return;} // once again, we get outa here
-
-            // if kirby's left edge is PAST the wave's right edge...
-            if (kirby.LocationRect.Left > wave.LocationRect.Right) 
+            foreach (Wave wave in spawner.Waves)
             {
-                Score++; // increment the score
-                wave.MarkCounted();
+                if (!wave.Active || wave.Counted) { continue; }
+
+                if (kirby.LocationRect.Left > wave.LocationRect.Right)
+                {
+                    Score++;
+                    wave.MarkCounted();
+                }
             }
         }
         private void CheckWinOrLose()
@@ -131,7 +129,7 @@ namespace OneButtonGame
         private void EndGame(GameState state)
         {
             State = state;
-            wave.Enabled = false; // freezes wave, claude helped me find this it's COOL
+            spawner.Enabled = false; // freezes wave, claude helped me find this it's COOL
             kirby.Enabled = false;
 
             if (Score > HighScore)

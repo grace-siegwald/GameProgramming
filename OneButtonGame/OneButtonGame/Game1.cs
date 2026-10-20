@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGameLibrary.Sprite;
 using MonoGameLibrary.Util;
+
+// Kirby face icons by Rabbid4240 (Kirby © Nintendo / HAL Laboratory)
 
 namespace OneButtonGame
 {
@@ -18,11 +15,12 @@ namespace OneButtonGame
         public float WindowScaler = 2.0f;
         public Texture2D Background;
 
+        // Things in da game
         InputHandler input;
         GameManager waveRideManager;
         HUD hud;
         WaterFloor water;
-        Wave wave;
+        ObstacleSpawner spawner;
         Kirby kirby;
 
         public Game1()
@@ -43,10 +41,10 @@ namespace OneButtonGame
             kirby = new Kirby(this, water);
             Components.Add(kirby);
 
-            wave = new Wave(this, water);
-            Components.Add(wave);
+            spawner = new ObstacleSpawner(this, water, 5);
+            Components.Add(spawner);
 
-            waveRideManager = new GameManager(this, kirby, wave); // last thing we add because we need kirby and wave
+            waveRideManager = new GameManager(this, kirby, spawner); // last thing we add because we need kirby and wave
             Components.Add(waveRideManager);
 
             hud = new HUD(this, waveRideManager);
