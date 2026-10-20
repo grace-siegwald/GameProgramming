@@ -38,6 +38,7 @@ namespace OneButtonGame
 
         public int Lives { get { return kirby.Lives; } } // just so we can get the lives on the hub without instantiating a whole new kirby
 
+
         public GameManager(Game game, Kirby kirby, Wave wave) : base(game)
         {
             this.kirby = kirby;
@@ -57,6 +58,7 @@ namespace OneButtonGame
             // HERE is where we check the two states of the ONE BUTTON in the game: pressed or not pressed
             // Space on the keyboard OR A on the gamepad
             bool buttonPressed = input.WasPressed(0, InputHandler.ButtonType.A, Keys.Space);
+            bool buttonHeld = input.KeyboardState.IsKeyDown(Keys.Space) || input.GamePads[0].Buttons.A == ButtonState.Pressed;
 
             switch (State)
             {
@@ -65,6 +67,7 @@ namespace OneButtonGame
                     break;
                 case GameState.Playing:
                     if (buttonPressed) { kirby.Jump(); } // if space is pressed, jump
+                    if (!buttonHeld) { kirby.ReleaseJump(); }
                     CheckHit();
                     CheckJumped();
                     CheckWinOrLose();

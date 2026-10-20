@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
@@ -21,12 +22,16 @@ namespace OneButtonGame
         public float SpeedIncrease = 20f; // incrememnt of speed increase per wave
         public float SpeedCap = 400f; // so we don't get TOO crazy ykwim :0
         public bool Counted { get; private set; } // keep track of whether kirby has hit the wave or jumped over it, needed for counting score and so getting hit only takes ONE life :)
+        
+        // min and max sizes
+        public float MinScale = 1.2f;
+        public float MaxScale = 2f;
 
         public Wave(Game game, WaterFloor water) : base(game)
         {
             //ShowMarkers = true; // uncomment to turn on sprite markers
             this.water = water;
-            Scale = 2f;
+            Scale = MaxScale;
         }
         protected override void LoadContent()
         {
@@ -63,6 +68,8 @@ namespace OneButtonGame
         }
         private void NextWave()
         {
+            Scale = MinScale + (float)random.NextDouble() * (MaxScale - MinScale); // random size
+            
             this.Location.X = Game.GraphicsDevice.Viewport.Width + this.Origin.X * Scale + random.Next(0, 200); // adding random so that the pattern of waves is less predictable
             Location.Y = water.Surface - Origin.Y * Scale;  
             Counted = false;

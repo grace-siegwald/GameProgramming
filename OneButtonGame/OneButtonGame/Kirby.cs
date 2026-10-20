@@ -122,7 +122,7 @@ namespace OneButtonGame
         }
         public void ReleaseJump()
         {
-            if (Direction.Y > -JumpCutSpeed)
+            if (Direction.Y < -JumpCutSpeed) // if kirby is "rising" faster than JumpCutSpeed (negative because -y is up)
             {
                 Direction.Y = -JumpCutSpeed;
             }
