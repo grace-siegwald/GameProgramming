@@ -15,13 +15,13 @@ namespace OneButtonGame
         // Speed: each new wave is a bit faster than the last
         public float StartSpeed = 200f;
         public float SpeedIncrease = 20f;
-        public float SpeedCap = 400f;
+        public float SpeedCap = 600f;
         float currentSpeed;
 
         // Spacing: random number of seconds between waves
         public float MinGap = 1.4f;
         public float MaxGap = 3.0f;
-        float spawnTimer;   // seconds until the next wave goes out
+        float spawnTimer; // seconds until the next wave goes out
 
         public ObstacleSpawner(Game game, WaterFloor water, int poolSize) : base(game)
         {

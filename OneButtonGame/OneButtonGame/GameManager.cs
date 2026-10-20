@@ -27,6 +27,7 @@ namespace OneButtonGame
         public bool NewHighScore { get; private set; }
 
         public int Lives { get { return kirby.Lives; } } // just so we can get the lives on the hub without instantiating a whole new kirby
+        public int MaxLives { get { return kirby.StartLives; } } // how many hearts to draw
 
 
         public GameManager(Game game, Kirby kirby, ObstacleSpawner spawner) : base(game)

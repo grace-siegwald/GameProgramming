@@ -14,8 +14,16 @@ namespace OneButtonGame
         Texture2D purpleFrame; // title + end screens
         Texture2D pinkPanel; // playing HUD
         public Vector2 FrameScale = new Vector2(3f, 3f); // purple frame: 3x wide, 3x tall
-        public Vector2 PanelScale = new Vector2(1.5f, 0.8f); // pink panel: wider than tall, to fit 3 short lines
+        public Vector2 PanelScale = new Vector2(1.1f, 0.6f); // pink panel: wider than tall, to fit 3 short lines
+        public int PanelLeft = 8; // the padding to the left of the playing panel
         public int PanelTop = 8; // how far down from the top the pink panel sits
+
+
+        // Heart things:
+        Texture2D heart;
+        public float HeartScale = 2.5f; // scaling
+        public int HeartSpacing = 6; // gap between hearts
+        public int HeartTop = 12; // hearts' distance from the top
 
         public float TextScale = 2f; // easy to scale the font if too big or small :)
 
@@ -35,6 +43,7 @@ namespace OneButtonGame
             purpleFrame = Game.Content.Load<Texture2D>("purpleFrame");
             pinkPanel = Game.Content.Load<Texture2D>("pinkTallPanel_normal");
             ratingTexture = Game.Content.Load<Texture2D>("great");
+            heart = Game.Content.Load<Texture2D>("heart");
 
             base.LoadContent();
         }
@@ -60,7 +69,7 @@ namespace OneButtonGame
 
         public override void Draw(GameTime gameTime)
         {
-            spriteBatch.Begin();
+            spriteBatch.Begin(samplerState: SamplerState.PointClamp); // keeps the scaled-up pixel art crisp instead of blurry (this is Claude recomendation)
 
             DrawHUDFrame();
 
@@ -77,11 +86,14 @@ namespace OneButtonGame
                     }, 180);
                     break;
                 case GameState.Playing:
+                    // Waves + Best, centered inside the pink panel in the top-left
+                    float panelCenterX = PanelLeft + pinkPanel.Width * PanelScale.X / 2;
                     DrawCenteredLines(new string[] {
                         "Waves " + manager.Score,
-                        "Lives " + manager.Lives,
                         "Best " + manager.HighScore
-                    }, PanelTop + 16);
+                    }, PanelTop + 8, panelCenterX);
+
+                    DrawHearts();   // health, top middle
 
                     if (ratingTimer > 0)
                     {
@@ -115,9 +127,8 @@ namespace OneButtonGame
 
             if (manager.State == GameState.Playing)
             {
-                // Pink panel, centered left-to-right at the top of the screen
-                float width = pinkPanel.Width * PanelScale.X;
-                Vector2 position = new Vector2((screenWidth - width) / 2, PanelTop);
+                // Pink panel, top-left corner
+                Vector2 position = new Vector2(PanelLeft, PanelTop);
                 spriteBatch.Draw(pinkPanel, position, null, Color.White, 0f, Vector2.Zero, PanelScale, SpriteEffects.None, 0f);
             }
             else
@@ -146,12 +157,40 @@ namespace OneButtonGame
         // Draws each line centered left-to-right, one under the other
         private void DrawCenteredLines(string[] lines, float startY)
         {
+            DrawCenteredLines(lines, startY, GraphicsDevice.Viewport.Width / 2f);
+        }
+        private void DrawCenteredLines(string[] lines, float startY, float centerX)
+        {
             float y = startY;
             foreach (string line in lines)
             {
                 float width = spriteFont.MeasureString(line).X * TextScale;
-                DrawText(line, new Vector2((GraphicsDevice.Viewport.Width - width) / 2, y));
+                DrawText(line, new Vector2(centerX - width / 2, y));
                 y += LineHeight();
+            }
+        }
+        // One heart per life, centered at the top of the screen.
+        // Lost lives still draw, but faded, so the remaining hearts don't slide around.
+        private void DrawHearts()
+        {
+            float heartWidth = heart.Width * HeartScale;
+            float totalWidth = manager.MaxLives * heartWidth + (manager.MaxLives - 1) * HeartSpacing;
+            float x = (GraphicsDevice.Viewport.Width - totalWidth) / 2;   // left edge of the first heart
+
+            for (int i = 0; i < manager.MaxLives; i++)
+            {
+                Color color;
+                if (i < manager.Lives)
+                {
+                    color = Color.White; // still have this life: full heart
+                }
+                else
+                {
+                    color = Color.White * 0.25f; // lost this life: faded heart
+                }
+
+                spriteBatch.Draw(heart, new Vector2(x, HeartTop), null, color, 0f, Vector2.Zero, HeartScale, SpriteEffects.None, 0f);
+                x += heartWidth + HeartSpacing; // move right for the next heart
             }
         }
     }
