@@ -94,12 +94,12 @@ namespace OneButtonGame
 
             SpriteTexture = groundedAnim.Frames[0];   // needs a texture BEFORE base.LoadContent sets the Origin so that it actually has a texture to assess lol
             base.LoadContent();
-            Reset();
         }
         public void Reset() // Resets kirby for another round of WAVES BABY, all the stuff that puts bro in place
         {
             Lives = StartLives;
-            Location = new Vector2(GraphicsDevice.Viewport.Width / 4, water.Surface);
+            this.Enabled = true;
+            Location = new Vector2(GraphicsDevice.Viewport.Width / 4, water.Surface - 100);
             ChangeState(KirbyState.Grounded);
             Direction = Vector2.Zero;
             Speed = 100;
