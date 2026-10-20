@@ -70,11 +70,15 @@ namespace OneButtonGame
                 case GameState.Title:
                     DrawCenteredLines(new string[] {
                         "Press SPACE to jump",
-                    }, 250);
+                        "Hold for a higher jump",
+                        "3 hits and you lose",
+                        "",
+                        "Press SPACE to start"
+                    }, 180);
                     break;
                 case GameState.Playing:
                     DrawCenteredLines(new string[] {
-                        "Waves " + manager.Score + "/" + manager.WavesToWin,
+                        "Waves " + manager.Score,
                         "Lives " + manager.Lives,
                         "Best " + manager.HighScore
                     }, PanelTop + 16);
@@ -85,24 +89,13 @@ namespace OneButtonGame
                         spriteBatch.Draw(ratingTexture, position, null, Color.White, 0f, Vector2.Zero, 4f, SpriteEffects.None, 0f);
                     }
                     break;
-                case GameState.Won:
-                    DrawCenteredLines(new string[] {
-                        "YOU WIN!",
-                        "",
-                        "Score " + manager.Score,
-                        "Best " + manager.HighScore,
-                        manager.NewHighScore ? "NEW BEST!" : "",
-                        "",
-                        "Press SPACE to play again"
-                    }, 120);
-                    break;
                 case GameState.Lost:
-                    DrawHUDFrame();
                     DrawCenteredLines(new string[] {
                         "GAME OVER",
                         "",
-                        "You cleared " + manager.Score + " waves",
+                        "You cleared " + manager.Score + " Waves",
                         "Best " + manager.HighScore,
+                        manager.NewHighScore ? "NEW BEST!" : "",
                         "",
                         "Press SPACE to try again"
                     }, 120);

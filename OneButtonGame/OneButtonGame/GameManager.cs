@@ -8,7 +8,6 @@ namespace OneButtonGame
     {
         Title,
         Playing,
-        Won,
         Lost
     }
     
@@ -27,9 +26,6 @@ namespace OneButtonGame
         public int HighScore { get; private set; }
         public bool NewHighScore { get; private set; }
 
-        public int WavesToWin = 10;
-        public int LifeBonus = 5; // extra points for if you keep more lives :)
-
         public int Lives { get { return kirby.Lives; } } // just so we can get the lives on the hub without instantiating a whole new kirby
 
 
@@ -43,7 +39,7 @@ namespace OneButtonGame
         {
             input = Game.Services.GetService<IInputHandler>();
             State = GameState.Title; // obviously the state we start the game in
-            spawner.Enabled = false;   // no waves on the title screen :)
+            spawner.Enabled = false; // no waves on the title screen :)
             base.Initialize();
         }
 
@@ -64,10 +60,7 @@ namespace OneButtonGame
                     if (!buttonHeld) { kirby.ReleaseJump(); }
                     CheckHit();
                     CheckJumped();
-                    CheckWinOrLose();
-                    break;
-                case GameState.Won:
-                    if (buttonPressed) { StartGame(); } // loop back to the start of the game
+                    CheckLose();
                     break;
                 case GameState.Lost:
                     if (buttonPressed) { StartGame(); }
@@ -113,23 +106,20 @@ namespace OneButtonGame
                 }
             }
         }
-        private void CheckWinOrLose()
+        
+        // Endless runner: the only way a run ends is losing all your lives
+        private void CheckLose()
         {
             if (kirby.Lives <= 0)
             {
-                EndGame(GameState.Lost); 
-            }
-            else if (Score >= WavesToWin)
-            {
-                Score += kirby.Lives * LifeBonus; // fun lil bonus for keeping lives
-                EndGame(GameState.Won);
+                EndGame(GameState.Lost);
             }
         }
 
         private void EndGame(GameState state)
         {
             State = state;
-            spawner.Enabled = false; // freezes wave, claude helped me find this it's COOL
+            spawner.Freeze(); // stop spawning AND freeze every wave where it is
             kirby.Enabled = false;
 
             if (Score > HighScore)
