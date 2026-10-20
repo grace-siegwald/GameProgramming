@@ -25,6 +25,7 @@ namespace OneButtonGame
         public int Score { get; private set; }
         public int HighScore { get; private set; }
         public bool NewHighScore { get; private set; }
+        HighScoreFile highScoreFile = new HighScoreFile(); // saves the best score between sessions
 
         public int Lives { get { return kirby.Lives; } } // just so we can get the lives on the hub without instantiating a whole new kirby
         public int MaxLives { get { return kirby.StartLives; } } // how many hearts to draw
@@ -39,6 +40,7 @@ namespace OneButtonGame
         public override void Initialize()
         {
             input = Game.Services.GetService<IInputHandler>();
+            HighScore = highScoreFile.Load(); // bring back the best score from last time
             State = GameState.Title; // obviously the state we start the game in
             spawner.Enabled = false; // no waves on the title screen :)
             base.Initialize();
@@ -127,6 +129,7 @@ namespace OneButtonGame
             {
                 HighScore = Score;
                 NewHighScore = true;
+                highScoreFile.Save(HighScore); // write it to the file right away
             }
         }
     }
