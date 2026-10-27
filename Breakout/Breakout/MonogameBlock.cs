@@ -12,6 +12,7 @@ namespace BreakoutStep1
     public class MonogameBlock : DrawableSprite
     {
         protected Block block;
+        Ball ball; // reference to ball, needed for collision
 
         protected string NormalTextureName, HitTextureName;
         protected Texture2D NormalTexture, HitTexture;
@@ -23,10 +24,10 @@ namespace BreakoutStep1
             set { this.block.BlockState =  value; }
         }
 
-        public MonogameBlock(Game game)
-        : base(game)
+        public MonogameBlock(Game game, Ball ball) : base(game)
         {
             this.block = new Block();
+            this.ball = ball;
             NormalTextureName = "block_blue";
             HitTextureName = "block_bubble";
         }
@@ -53,6 +54,19 @@ namespace BreakoutStep1
             }
         }
 
+        private void UpdateCollision()
+        {
+            // when ball interesects block, block is hit by ball
+            if (this.Intersects(ball))
+            {
+                HitByBall(ball);
+            }
+
+            // guards
+            if (this.BlockState == BlockState.Broken) return;
+            if (ball.State != BallState.Playing) return;
+        }
+
         protected override void LoadContent()
         {
             this.NormalTexture = this.Game.Content.Load<Texture2D>(NormalTextureName);
@@ -64,19 +78,20 @@ namespace BreakoutStep1
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
+            UpdateCollision();
             block.UpdateBlockState();
-            UnityBlockUpdate();
+            MonoGameBlockUpdate();
         }
 
-        protected virtual void UnityBlockUpdate()
+        protected virtual void MonoGameBlockUpdate()
         {
             updateBlockTexture();
         }
 
         public void HitByBall(Ball ball)
         {
-            this.block.Hit();
-
+            this.block.Hit(); // iterate the hit count, update state
+            ball.BounceOffBlock(this); // ball bounces off this block
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// POCO Class
 namespace BreakoutStep1
 {
     public enum BlockState { Normal, Hit, Broken }

@@ -83,8 +83,15 @@ namespace BreakoutStep1
 
         private void UpdateBall(GameTime gameTime)
         {
-            this.Location += this.Direction * (this.Speed * gameTime.ElapsedGameTime.Milliseconds / 1000);
-
+            Move(gameTime);
+            BounceOffWalls();
+        }
+        private void Move(GameTime gameTime) // I like having this in its own method
+        {
+            this.Location += this.Direction * (this.Speed * gameTime.ElapsedGameTime.Milliseconds / 1000); 
+        }
+        private void BounceOffWalls()
+        {
             //bounce off wall
             //Left and Right
             if ((this.Location.X + this.spriteTexture.Width > this.Game.GraphicsDevice.Viewport.Width)
@@ -101,12 +108,52 @@ namespace BreakoutStep1
                 this.Direction.Y *= -1;
                 console.GameConsoleWrite("Should lose life here!!!");
             }
-
             //Top
             if (this.Location.Y < 0)
             {
                 this.Direction.Y *= -1;
             }
+
+        }
+        public void BounceOffBlock(MonogameBlock block)
+        {
+            // create rectangle based on overlap of block and bal
+            Rectangle overlap = Rectangle.Intersect(this.LocationRect, block.LocationRect);
+            if (overlap.IsEmpty) return;
+
+            // Bounce off Block - left or right 
+            if (overlap.Width < overlap.Height)
+            {
+                this.Direction.X *= -1; // flip x direction
+                
+                // move out of overlap area so we don't collide twice
+                if (this.LocationRect.Center.X < block.LocationRect.Center.X)
+                {
+                    this.Location.X -= overlap.Width;
+                }
+                else
+                {
+                    this.Location.X += overlap.Width;
+                }
+            }
+            // Bounce off Block - top or bottom
+            else
+            {
+                this.Direction.Y *= -1; // flip y direction
+
+                // move out of overlap area so we don't collide twice
+                if (this.LocationRect.Center.Y < block.LocationRect.Center.Y)
+                {
+                    this.Location.Y -= overlap.Height;
+                }
+                else
+                {
+                    this.Location.Y += overlap.Height;
+                }
+            }
+
+            // refresh LocationRect now so other blocks this frame see where the ball really is
+            this.SetTranformAndRect();
         }
     }
 }
