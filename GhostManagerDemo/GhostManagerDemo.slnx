@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GhostManagerDemo/GhostManagerDemo.csproj" />
+  <Project Path="../MonoGameLibrary/MonoGameLibrary.csproj" />
+</Solution>
